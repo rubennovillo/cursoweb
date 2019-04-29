@@ -1,3 +1,11 @@
-h1, p{
-    /*display: inline;*/
+h1{
+    text-align: center
+}
+.centrado{
+    text-align: center;
+
+}
+
+.destacado{
+    color: blue;
 }
