@@ -10,3 +10,13 @@ background-color: rgb(255, 196, 123);
 .content_wrapper{
     margin: 1rem 3rem;
 }
+
+.image_wrapper{
+    text-align: center;
+    margin: 0;
+}
+
+img{
+    max-width: 100%;
+
+}
