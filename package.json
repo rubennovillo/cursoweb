@@ -1,0 +1,28 @@
+{
+  "name": "cursoweb",
+  "version": "1.0.0",
+  "description": "Ejercicios del curso",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rubennovillo/cursoweb.git"
+  },
+  "keywords": [
+    "curso",
+    "html5",
+    "css3",
+    "javascript"
+  ],
+  "author": "Rubén Novillo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rubennovillo/cursoweb/issues"
+  },
+  "homepage": "https://github.com/rubennovillo/cursoweb#readme",
+  "dependencies": {
+    "bootstrap": "^4.3.1"
+  }
+}
