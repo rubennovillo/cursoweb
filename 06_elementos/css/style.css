@@ -57,6 +57,7 @@ h1{
 
 .presentacion{
     color: green;
+    font-size: 5mm;
     
 }
 
@@ -81,9 +82,11 @@ img{
 .title2{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 8mm; 
-    color: blue;
+    background-color: rgb(0, 82, 0);
+    color:white;
     margin-bottom: 10px;
     margin-top: 10px;
+
     
 }
 
@@ -97,6 +100,7 @@ p, pre, blockquote {
     font-size: 6mm;
     margin-top: 20px;
     margin-bottom: 10px;
+    color: rgb(0, 82, 0)
 }
 
 blockquote{
@@ -109,6 +113,12 @@ blockquote footer{
     padding-top: 0.3rem;
     border-top: 1px solid grey;
     width: fit-content;
+
+}
+
+.def{
+    padding-bottom: 1rem;
+    color: green
 }
 
 .dt{
