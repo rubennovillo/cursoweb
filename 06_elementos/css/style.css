@@ -87,7 +87,7 @@ img{
     
 }
 
-#sections_elements p {
+p, pre, blockquote {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
 }
@@ -97,4 +97,32 @@ img{
     font-size: 6mm;
     margin-top: 20px;
     margin-bottom: 10px;
+}
+
+blockquote{
+
+
+}
+
+blockquote footer{
+    margin-top: 0.5rem;
+    padding-top: 0.3rem;
+    border-top: 1px solid grey;
+    width: fit-content;
+}
+
+.dt{
+
+}
+
+.dd{
+
+}
+
+dt{
+
+}
+
+dd{
+
 }
