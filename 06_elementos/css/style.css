@@ -157,3 +157,17 @@ display: inline-block;
     display:block;
     padding:1rem;
 }
+
+img{
+    max-width:100%;
+}
+
+.seccion_imagenes img{
+    max-width:25%;
+    display: block;
+    float: left;
+
+}
+.clearfix{
+    clear: both;
+}

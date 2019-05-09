@@ -25,44 +25,87 @@
     </Header>
     <main>
         <div class="content_wrapper">
-    
-        <section id="multimedia">
-        <h2>Multimedia</h2>
-        <p></p>
-        <ul>
-            <li>imágenes
+
+            <section id="multimedia">
+                <h2>Multimedia</h2>
+                <p></p>
                 <ul>
-                    <li>jpg</li>
-                    <li>gif</li>
-                    <li>png</li>
-                    <li>svg</li>
-                    <li>webp</li>
+                    <li>imágenes
+                        <ul>
+                            <li>jpg</li>
+                            <li>gif</li>
+                            <li>png</li>
+                            <li>svg</li>
+                            <li>webp</li>
+                        </ul>
+                    </li>
+                    <li>video y audio
+                        <ul>
+                            <li>Divx</li>
+                            <li>Mp4</li>
+                            <li>Avi</li>
+                        </ul>
+                    </li>
+                    <li>elementos de navegación gráficos</li>
                 </ul>
-            </li>
-            <li>video y audio
-                <ul>
-                    <li>Divx</li>
-                    <li>Mp4</li>
-                    <li>Avi</li>
-                </ul>
-            </li>
-            <li>elementos de navegación gráficos</li>
-           
-        </ul>
-    </section>
+                <section class="title3">
+                    <h3>imagenes</h3>
+                </section>
+                <section class="seccion_imagenes">
+                    <!-- <img src="./assets/komodo.jpg" alt="Varano de Komodo con lengua fuera"> -->
+
+                    <img src="./assets/WoodElf.png" alt="Elfo del bosque">
+
+                    <img src="./assets/ardilla.gif" alt="Ardilla comiendo bellota">
+
+                    <img srcset="./assets/3boats.webp" src="./assets/3boats.jpg" alt="Barcas">
+                </section>
+                <div class="clearfix">
+                    <p>Uso de imagenes responsivas en html</p>
+                    <div>
+                        <picture>
+                            <img srcset="./assets/komodo.300.jpg 300w,
+                                        ./assets/komodo.400.jpg 400w,
+                                        ./assets/komodo.500.jpg 500w,
+                                        ./assets/komodo.jpg 600w" sizes="(max-width: 300px),
+                                        (max-width: 400px),
+                                        (max-width: 500px)" src="./assets/komodo.jpg"
+                                alt="Varano de Komodo con lengua fuera">
+                        </picture>
+
+                        <div class="clearfix"></div>
+                        <p>Uso de imagenes responsivas</p>
+                        
+                        <div>
+                        <picture>
+                            <source media="(max-width: 200px)" srcset="./assets/eiffel_pequeña.jpg" type="image/jpg">
+                            <source media="(max-width: 400px)" srcset="./assets/eiffel_mediana.jpg" type="image/jpg">
+                            <img src="./assets/eiffel.jpg" alt="Torre eiffel">
+
+                        </picture>
+                        </div>
+
+
+
+                        <section class="seccion_audio">
+                        </section>
+                        <section class="seccion_otros">
+
+                        </section>
+            </section>
     </main>
     <aside>
-            <h2>Publicidad</h2>
-            <p>Pon aquí tu anuncio</p>
-        </aside>
+        <h2>Publicidad</h2>
+        <p>Pon aquí tu anuncio</p>
+    </aside>
     </div>
     <footer class="main_footer">
 
-            <address>
-                <p>Rubén Novillo Díaz - Tajamar</p>
-                <a href="mailto://rubennd1990@gmail.com">Enviar correo</a>
-                <p>&copy;derechos reservados</p>
-            </address>
-    
-        </footer>    
+        <address>
+            <p>Rubén Novillo Díaz - Tajamar</p>
+            <a href="mailto://rubennd1990@gmail.com">Enviar correo</a>
+            <p>&copy;derechos reservados</p>
+        </address>
+
+    </footer>
 </body>
