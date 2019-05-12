@@ -117,6 +117,17 @@ blockquote footer{
 
 }
 
+.virtualstudio{
+    background-color: rgba(36, 35, 35, 0.815);
+    color: white;
+    margin: 2rem 0 2rem 0
+}
+
+.green{
+    font-weight: bold;
+    color: lime;
+}
+
 .def{
     padding-bottom: 1rem;
     color: green

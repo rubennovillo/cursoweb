@@ -23,350 +23,420 @@
             </ul>
         </nav>
     </Header>
-<main>
-    <div class="content_wrapper">
-        <p class="presentacion">El estándar diferencia inicialmente tres tipos de etiquetas: Section, grouping content,
-            text-level</p>
-        <section id="sections_elements">
-            <header class="title2">
-                <h2>
-                    <span lang="en"> 1. Sections </span>
-                </h2>
-            </header>
-            <p>Elementos de seccionado, que son los que se reflejan en un <strong>esquema</strong> de la página</p>
-            <p>Inicialmente estos elementos incluían body y los encabezados h1...h6</p>
-            <p>En html se añaden los nuevos elementos semánticos: <span lang="en">section, header, article, footer, nav
-                    y
-                    aside</span></p>
-
-            <section id="section">
-                <header class="title3">
-                    <h3>
-                        <span lang="en"> 1.1. Section </span>
-                    </h3>
+    <main>
+        <div class="content_wrapper">
+            <p class="presentacion">El estándar diferencia inicialmente tres tipos de etiquetas: Section, grouping
+                content,
+                text-level</p>
+            <section id="sections_elements">
+                <header class="title2">
+                    <h2>
+                        <span lang="en"> 1. Sections </span>
+                    </h2>
                 </header>
-                <blockquote>
-                    <p class="def">Define una sección</p>
-                    <p>Section es un elemento de seccionamiento genérico, diseñado para contener una parte de un
-                        documento temáticamente definida. Los contenidos de un elemento section son usualmente
-                        precedidos por un encabezado. El elemento section está pensado para agrupar temáticamente un
-                        conjunto de elementos. Si existiese la necesidad de definir un bloque con propósitos
-                        exclusimavemnte estilísticos o de programación, el elemento div debería utilizarse en su lugar.
-                    </p>
-                    <footer>
-                        <cite>
-                            <a href="http://www.htmlquick.com/es/reference/tags/section.html"
-                                rel="external">Htmlquick</a>
-                        </cite>
-                    </footer>
+                <p>Elementos de seccionado, que son los que se reflejan en un <strong>esquema</strong> de la página</p>
+                <p>Inicialmente estos elementos incluían body y los encabezados h1...h6</p>
+                <p>En html se añaden los nuevos elementos semánticos: <span lang="en">section, header, article, footer,
+                        nav
+                        y
+                        aside</span></p>
 
-                </blockquote>
-
-            </section>
-            <section id="header">
-                <header class="title3">
-                    <h3>
-                        <span lang="en"> 1.2. Header </span>
-                    </h3>
-                </header>
-                <blockquote>
-                    <p class="def">El encabezado de una sección</p>
-                    <p>El elemento header contiene al encabezado de una sección o documento, donde se colocan
-                        habitualmente los encabezados, los vínculos de navegación, los formularios de búsqueda, los
-                        logos, las tablas de contenidos, las introducciones, etc. En muchos casos, los contenidos del
-                        encabezado de un documento son consistentes a lo largo de todo el sitio.</p>
-                    <footer>
-                        <cite>
-                            <a href="http://www.htmlquick.com/es/reference/tags/header.html">Htmlquick</a>
-                        </cite>
-                    </footer>
-                </blockquote>
-            </section>
-            <section id="footer">
-                <header class="title3">
-                    <h3>
-                        <span lang="en"> 1.3. Footer </span>
-                    </h3>
-                </header>
-
-                <blockquote>
-                    <p class="def">El pie de una sección</p>
-                    <p>El elemento footer representa al pie de una sección o documento, donde los autores habitualmente
-                        colocan firmas, información acerca del autor, información de licencias, documentos relacionados,
-                        etc. En muchos casos, los contenidos del pie de un documento son consistentes a lo largo de todo
-                        el sitio.</p>
-                    <footer>
-                        <cite>
-                            <a href="http://www.htmlquick.com/es/reference/tags/footer.html">Htmlquick</a>
-                        </cite>
-                    </footer>
-                </blockquote>
-
-            </section>
-            <section id="nav">
-                <header class="title3">
-                    <h3>
-                        <span lang="en"> 1.4. Nav </span>
-                    </h3>
-                </header>
-                <blockquote>
-                    <p class="def">Sección de navegación</p>
-                    <p>El elemento nav es un contenedor para enlaces de navegación, que se supone proveen formas de
-                        acceder a las secciones del sitio web, así como a documentos externos. Se supone que los
-                        vínculos dentro de este elemento corresponden a un bloque de navegación principal únicamente.
-                    </p>
-                    <footer>
-                        <cite>
-                            <a href="http://www.htmlquick.com/es/reference/tags/nav.html">Htmlquick</a>
-                        </cite>
-                    </footer>
-                </blockquote>
-
-
-            </section>
-            <section id="article">
-                <header class="title3">
-                    <h3>
-                        <span lang="en"> 1.5. Article </span>
-                    </h3>
-                </header>
-                <p>
-                    El Elemento article de HTML (&lt;article&gt;) representa una composición auto-contenida en un
-                    documento, página, una aplicación o en el sitio, que se destina a distribuir de forma independiente
-                    o reutilizable, por ejemplo, en la sindicación. Podría ser un mensaje en un foro, un artículo de una
-                    revista o un periódico, una entrada de blog, un comentario de un usuario, un widget interactivo o
-                    gadget, o cualquier otro elemento independiente del contenido
-                </p>
-            </section>
-            <section id="aside">
-                <header class="title3">
-                    <h3>
-                        <span lang="en"> 1.6. Aside </span>
-                    </h3>
-                </header>
-                <p>
-                    El Elemento HTML Aside (&lt;aside&gt;) representa una sección de una página que consiste en
-                    contenido que está <em>tangencialmente relacionado</em> con el contenido que le rodea, que podría
-                    ser considerado independiente de ese contenido. Estas secciones son a menudo representadas como
-                    barras laterales o como inserciones y contienen una explicación al margen como una definición de
-                    glosario,
-                    elementos relacionados indirectamente, como publicidad, la biografía del autor, o en aplicaciones
-                    web, la información de perfil o enlaces a blogs relacionados. Estas secciones son a menudo
-                    representadas como barras laterales o como inserciones y contienen una
-                    explicación al margen como una definición de glosario, elementos relacionados indirectamente, como
-                    publicidad, la biografía del autor, o en aplicaciones web, la información de perfil o enlaces a
-                    blogs relacionados.
-                </p>
-
-            </section>
-        </section>
-        <section id="agrupaciones">
-            <header class="title2">
-                <h2>
-                    <span lang="en"> 2. Grouping </span>
-                </h2>
-
-            </header>
-
-            <p>Son elementos que no contribuyen o no se reflejan en el <strong>esquema</strong> de la página </p>
-
-            <section id="párrafo">
-                <header class="title3">
-                    <h3> 2.1 Párrafo</h3>
-                </header>
-                <p>Inserta un párrafo</p>
-                <p>El elemento p representa un párrafo. Se considera párrafo a un bloque de texto compuesto de una o más
-                    oraciones que se refieren a un tema en particular y que normalmente se separa de otros por un
-                    espacio en blanco. Se pueden crear párrafos con las etiquetas, p, pre, blockquote</p>
-
-            </section>
-
-            <section id="listas">
-                <header class="title3">
-                    <h3>2.2 Listas</h3>
-                </header>
-                <p>
-                    Las listas las podemos diferenciar en tres tipos, lista ordenada (&lt;ol&gt;), lista desordenada
-                    (&lt;ul&gt;), lista detalle (&lt;dl&gt;).
-                </p>
-
-                <dl>
-                    <dt> Bolígrafo Bic</dt>
-                    <dd>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut vel ab deserunt, expedita
-                        praesentium eveniet quibusdam accusamus voluptas repellendus. Ut aspernatur quisquam nihil
-                        reiciendis assumenda beatae laborum consequatur doloribus sapiente!</dd>
-                    <dt> Bolígrafo Pilot</dt>
-                    <dd>hSequi placeat nisi enim est atque deleniti temporibus.Delectus, corrupti recusandae ducimus
-                        autem ipsam eius molestias exercitationem, ab ad, provident magni iste aliquid in dolore
-                        nesciunt tenetur ipsum vitae repellat incidunt adipisci laudantium ex deserunt eum suscipit?
-                        Aliquam.</dd>
-
-
-                </dl>
-            </section>
-
-            <section id="div">
-                <header class="title3">
-                    <h3>2.3 div</h3>
-                </header>
-                <blockquote>
-                    <p>
-                        Contenido genérico para bloques de texto
-                    </p>
-                    <p>
-                        El elemento div es un contenedor genérico sin un significado semántico en particular. Se
-                        utiliza comúnmente en el desarrollo de documentos con propósitos estilísticos, en conjunto
-                        con los atributos style y class. También puede resultar útil para proveer atributos comunes
-                        a los elementos contenidos por el, como por ejemplo lang o title.
-                    </p>
-                </blockquote>
-
-            </section>
-
-            <section id="address">
-                <header class="title3">
-                    <h3>2.4 address</h3>
-                </header>
-                <blockquote>
-                    <p>
-                        información de contacto del autor
-                    </p>
-                    <p>
-                        El contenido de un elemento address provee información de contacto para el autor de la
-                        sección o documento, como una dirección postal, una dirección de correo electrónico, un
-                        número
-                        telefónico, una ciudad, un país, un código postal, etc.
-                    </p>
-                </blockquote>
-
-            </section>
-            <section id="main">
-                <header class="title3">
-                    <h3>2.5 main</h3>
-                </header>
-                <blockquote>
-                    <p>
-                        información de contacto del autor
-                    </p>
-                    <p>
-                        El contenido de un elemento address provee información de contacto para el autor de la
-                        sección o documento, como una dirección postal, una dirección de correo electrónico, un
-                        número
-                        telefónico, una ciudad, un país, un código postal, etc.
-                    </p>
-                </blockquote>
-
-            </section>
-            <section id="figure">
-                <header class="title3">
-                    <h3>2.6 Figure</h3>
-                </header>
-                <blockquote>
-                    <p>
-                        información de contacto del autor
-                    </p>
-                    <p>
-                        El contenido de un elemento address provee información de contacto para el autor de la
-                        sección o documento, como una dirección postal, una dirección de correo electrónico, un
-                        número
-                        telefónico, una ciudad, un país, un código postal, etc.
-                    </p>
-                </blockquote>
-
-            </section>
-
-        </section>
-
-        <section id="Niveles_del_texto">
-
-            <header class="title2">
-                <h2>
-                    <span lang="en"> 3. Text-level </span>
-                </h2>
-            </header>
-            <div class="left">
-                <section>
+                <section id="section">
                     <header class="title3">
-                        <h3>3.1 hiperenlaces</h3>
+                        <h3>
+                            <span lang="en"> 1.1. Section </span>
+                        </h3>
                     </header>
-                    <p>a</p>
-                </section>
+                    <blockquote>
+                        <p class="def">Define una sección</p>
+                        <p>Section es un elemento de seccionamiento genérico, diseñado para contener una parte de un
+                            documento temáticamente definida. Los contenidos de un elemento section son usualmente
+                            precedidos por un encabezado. El elemento section está pensado para agrupar temáticamente un
+                            conjunto de elementos. Si existiese la necesidad de definir un bloque con propósitos
+                            exclusimavemnte estilísticos o de programación, el elemento div debería utilizarse en su
+                            lugar.
+                        </p>
+                        <footer>
+                            <cite>
+                                <a href="http://www.htmlquick.com/es/reference/tags/section.html"
+                                    rel="external">Htmlquick</a>
+                            </cite>
+                        </footer>
 
-                <section>
-                    <header class="title3">
-                        <h3>3.2 Elementos claramente semánticos</h3>
-                    </header>
-                    <ul>
-                        <li>strong</li>
-                        <li>em</li>
-                        <li>sup</li>
-                        <li>sub</li>
-                        <li>small</li>
-                    </ul>
-                </section>
-                <section>
-                    <header class="title3">
-                        <h3>3.3 Elementos de tipo técnico</h3>
-                    </header>
-                    <ul>
-                        <li>samp</li>
-                        <li>code</li>
-                        <li>kbd</li>
-                        <li>var</li>
-                        <li>dfn</li>
-                        <li>abbr</li>
+                    </blockquote>
 
-                    </ul>
                 </section>
-                <section>
+                <section id="header">
                     <header class="title3">
-                        <h3>3.4 Uso de referencias y citas</h3>
+                        <h3>
+                            <span lang="en"> 1.2. Header </span>
+                        </h3>
                     </header>
-                    <ul>
-                        <li>cite</li>
-                        <li>q</li>
-                    </ul>
+                    <blockquote>
+                        <p class="def">El encabezado de una sección</p>
+                        <p>El elemento header contiene al encabezado de una sección o documento, donde se colocan
+                            habitualmente los encabezados, los vínculos de navegación, los formularios de búsqueda, los
+                            logos, las tablas de contenidos, las introducciones, etc. En muchos casos, los contenidos
+                            del
+                            encabezado de un documento son consistentes a lo largo de todo el sitio.</p>
+                        <footer>
+                            <cite>
+                                <a href="http://www.htmlquick.com/es/reference/tags/header.html">Htmlquick</a>
+                            </cite>
+                        </footer>
+                    </blockquote>
                 </section>
-                <section>
+                <section id="footer">
                     <header class="title3">
-                        <h3>3.5 Otras etiquetas semánticas de html5</h3>
-                    </header>
-                    <ul>
-                        <li>time</li>
-                        <li>mark</li>
-
-                    </ul>
-                </section>
-                <section>
-                    <header class="title3">
-                        <h3>3.6 Elementos en linea neutros</h3>
+                        <h3>
+                            <span lang="en"> 1.3. Footer </span>
+                        </h3>
                     </header>
 
-                    <p>la etiqueta spam no tiene ningún valor semántico</p>
-                </section>
-                <section>
-                    <header class="title3">
-                        <h3>Edits</h3>
-                    </header>
-                    <ul>
-                        <p>ins</p>
-                        <p>del</p>
-                    </ul>
-                </section>
+                    <blockquote>
+                        <p class="def">El pie de una sección</p>
+                        <p>El elemento footer representa al pie de una sección o documento, donde los autores
+                            habitualmente
+                            colocan firmas, información acerca del autor, información de licencias, documentos
+                            relacionados,
+                            etc. En muchos casos, los contenidos del pie de un documento son consistentes a lo largo de
+                            todo
+                            el sitio.</p>
+                        <footer>
+                            <cite>
+                                <a href="http://www.htmlquick.com/es/reference/tags/footer.html">Htmlquick</a>
+                            </cite>
+                        </footer>
+                    </blockquote>
 
-        </section>
-    </div>
-    <figure class="image_wrapper">
-        <img src="assets/html5demo1.jpg" alt="Esquema secciones HTML5">
-        <figcaption>Esquema de las secciones de HTML5</figcaption>
-    </figure>
-</main>
+                </section>
+                <section id="nav">
+                    <header class="title3">
+                        <h3>
+                            <span lang="en"> 1.4. Nav </span>
+                        </h3>
+                    </header>
+                    <blockquote>
+                        <p class="def">Sección de navegación</p>
+                        <p>El elemento nav es un contenedor para enlaces de navegación, que se supone proveen formas de
+                            acceder a las secciones del sitio web, así como a documentos externos. Se supone que los
+                            vínculos dentro de este elemento corresponden a un bloque de navegación principal
+                            únicamente.
+                        </p>
+                        <footer>
+                            <cite>
+                                <a href="http://www.htmlquick.com/es/reference/tags/nav.html">Htmlquick</a>
+                            </cite>
+                        </footer>
+                    </blockquote>
+
+
+                </section>
+                <section id="article">
+                    <header class="title3">
+                        <h3>
+                            <span lang="en"> 1.5. Article </span>
+                        </h3>
+                    </header>
+                    <blockquote>
+                        <p class="def">Contenido redistribuible</p>
+                        <p>
+                            El Elemento article de HTML (&lt;article&gt;) representa una composición auto-contenida en
+                            un
+                            documento, página, una aplicación o en el sitio, que se destina a distribuir de forma
+                            independiente
+                            o reutilizable, por ejemplo, en la sindicación. Podría ser un mensaje en un foro, un
+                            artículo de una
+                            revista o un periódico, una entrada de blog, un comentario de un usuario, un widget
+                            interactivo o
+                            gadget, o cualquier otro elemento independiente del contenido
+                        </p>
+                        <footer>
+                            <cite>
+                                <a href="http://www.htmlquick.com/es/reference/tags/article.html">Htmlquick</a>
+                            </cite>
+                        </footer>
+                    </blockquote>
+                </section>
+                <section id="aside">
+                    <header class="title3">
+                        <h3>
+                            <span lang="en"> 1.6. Aside </span>
+                        </h3>
+                    </header>
+                    <blockquote>
+                        <p class="def">Apartado secundario</p>
+                        <p>
+                            El Elemento HTML Aside (&lt;aside&gt;) representa una sección de una página que consiste en
+                            contenido que está <em>tangencialmente relacionado</em> con el contenido que le rodea, que
+                            podría
+                            ser considerado independiente de ese contenido. Estas secciones son a menudo representadas
+                            como
+                            barras laterales o como inserciones y contienen una explicación al margen como una
+                            definición de
+                            glosario,
+                            elementos relacionados indirectamente, como publicidad, la biografía del autor, o en
+                            aplicaciones
+                            web, la información de perfil o enlaces a blogs relacionados. Estas secciones son a menudo
+                            representadas como barras laterales o como inserciones y contienen una
+                            explicación al margen como una definición de glosario, elementos relacionados
+                            indirectamente, como
+                            publicidad, la biografía del autor, o en aplicaciones web, la información de perfil o
+                            enlaces a
+                            blogs relacionados.
+                        </p>
+                        <footer>
+                            <cite>
+                                <a href="http://www.htmlquick.com/es/reference/tags/aside.html">Htmlquick</a>
+                            </cite>
+                        </footer>
+                    </blockquote>
+
+                </section>
+            </section>
+            <section id="agrupaciones">
+                <header class="title2">
+                    <h2>
+                        <span lang="en"> 2. Grouping </span>
+                    </h2>
+                </header>
+                <blockquote>
+                    <p>Son elementos que no contribuyen o no se reflejan en el <strong>esquema</strong> de la página
+                    </p>
+
+                    <section id="párrafo">
+                        <header class="title3">
+                            <h3> 2.1 Párrafo</h3>
+                        </header>
+                        <blockquote>
+                            <p>Inserta un párrafo</p>
+                            <p>El elemento p representa un párrafo. Se considera párrafo a un bloque de texto compuesto
+                                de una o más
+                                oraciones que se refieren a un tema en particular y que normalmente se separa de otros
+                                por un
+                                espacio en blanco. Se pueden crear párrafos con las etiquetas, p, pre, blockquote</p>
+                            <p>
+                                &lt;P&gt;, se usa para redactar un parrafo relativamente propio, que no pertenezca a una
+                                página o un archivo en concreto. &lt;Pre&gt; es un tipo de parrafo prediseñado que
+                                guarda la misma apariencia visual, de fuente, tamaño, espacio, tabulaciones y saltos de
+                                linea, perfecto para parrafos copiados que queramos que mantengan exactamente la misma
+                                composición. y por ultimo &lt;blockquote&gt; es usado unicamente para cubrir uno o
+                                varios parrafos sacados de una página, archivo, libro, periodico etc, por lo general
+                                acompañado de una etiqueta &lt;cite&lt; con la referencia de donde sacamos el articulo
+                                en cuestión.
+                            </p>
+                        </blockquote>
+                    </section>
+
+                    <section id="listas">
+                        <header class="title3">
+                            <h3>2.2 Listas</h3>
+                        </header>
+                        <p>
+                            Las listas las podemos diferenciar en tres tipos, lista ordenada (&lt;ol&gt;), lista
+                            desordenada
+                            (&lt;ul&gt;), lista detalle (&lt;dl&gt;).
+                        </p>
+                        <p>
+                            El elemento &lt;ol&gt; representa una lista ordenada de ítems que, en contraste con las
+                            listas no ordenadas (elemento &lt;ul&gt;), produce un significado diferente si el orden de
+                            los ítems es alterado. Los ítems de ambas listas, ordenadas y no ordenadas, son
+                            representados por el elemento (&lt;li&gt;).
+                            <pre class="virtualstudio">
+
+                           <spam class="green">&lt;p&gt;</spam>Procedimiento para ingresar a la configuración: <spam class="green">&lt;&#47;p&gt;</spam>
+                            <spam class="green">&lt;ol&gt;</spam>
+                                    <spam class="green">&lt;li&gt;</spam>Encienda la computadora.<spam class="green">&lt;&#47;li&gt;</spam>
+                                    <spam class="green">&lt;li&gt;</spam>Presione la tecla <spam class="green">&lt;kbd&gt;</spam>DEL<spam class="green">&lt;&#47;kbd&gt;</spam> cuando se le indique.<spam class="green">&lt;&#47;li&gt;</spam>
+                                    <spam class="green">&lt;li&gt;</spam>Ingrese la contraseña<spam class="green">&lt;&#47;li&gt;</spam>
+                            <spam class="green">&lt;&#47;ol&gt;</spam>
+                                
+                            </pre>
+                        </p>
+                        <p>
+
+                        </p>
+
+                        <dl>
+                            <dt> Bolígrafo Bic </dt>
+                            <dd>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut vel ab deserunt, expedita
+                                praesentium eveniet quibusdam accusamus voluptas repellendus. Ut aspernatur quisquam
+                                nihil
+                                reiciendis assumenda beatae laborum consequatur doloribus sapiente!</dd>
+                            <dt> Bolígrafo Pilot</dt>
+                            <dd>hSequi placeat nisi enim est atque deleniti temporibus.Delectus, corrupti recusandae
+                                ducimus
+                                autem ipsam eius molestias exercitationem, ab ad, provident magni iste aliquid in dolore
+                                nesciunt tenetur ipsum vitae repellat incidunt adipisci laudantium ex deserunt eum
+                                suscipit?
+                                Aliquam.</dd>
+
+
+                        </dl>
+                    </section>
+
+                    <section id="div">
+                        <header class="title3">
+                            <h3>2.3 div</h3>
+                        </header>
+                        <blockquote>
+                            <p>
+                                Contenido genérico para bloques de texto
+                            </p>
+                            <p>
+                                El elemento div es un contenedor genérico sin un significado semántico en particular. Se
+                                utiliza comúnmente en el desarrollo de documentos con propósitos estilísticos, en
+                                conjunto
+                                con los atributos style y class. También puede resultar útil para proveer atributos
+                                comunes
+                                a los elementos contenidos por el, como por ejemplo lang o title.
+                            </p>
+                        </blockquote>
+
+                    </section>
+
+                    <section id="address">
+                        <header class="title3">
+                            <h3>2.4 address</h3>
+                        </header>
+                        <blockquote>
+                            <p>
+                                información de contacto del autor
+                            </p>
+                            <p>
+                                El contenido de un elemento address provee información de contacto para el autor de la
+                                sección o documento, como una dirección postal, una dirección de correo electrónico, un
+                                número telefónico, una ciudad, un país, un código postal, etc.
+                            </p>
+                        </blockquote>
+
+                    </section>
+                    <section id="main">
+                        <header class="title3">
+                            <h3>2.5 main</h3>
+                        </header>
+                        <blockquote>
+                            <p>
+                                información de contacto del autor
+                            </p>
+                            <p>
+                                El contenido de un elemento address provee información de contacto para el autor de la
+                                sección o documento, como una dirección postal, una dirección de correo electrónico, un
+                                número telefónico, una ciudad, un país, un código postal, etc.
+                            </p>
+                        </blockquote>
+
+                    </section>
+                    <section id="figure">
+                        <header class="title3">
+                            <h3>2.6 Figure</h3>
+                        </header>
+                        <blockquote>
+                            <p>
+                                información de contacto del autor
+                            </p>
+                            <p>
+                                El contenido de un elemento address provee información de contacto para el autor de la
+                                sección o documento, como una dirección postal, una dirección de correo electrónico, un
+                                número
+                                telefónico, una ciudad, un país, un código postal, etc.
+                            </p>
+                        </blockquote>
+
+                    </section>
+
+            </section>
+
+            <section id="Niveles_del_texto">
+
+                <header class="title2">
+                    <h2>
+                        <span lang="en"> 3. Text-level </span>
+                    </h2>
+                </header>
+                <div class="left">
+                    <section>
+                        <header class="title3">
+                            <h3>3.1 hiperenlaces</h3>
+                        </header>
+                        <p>a</p>
+                    </section>
+
+                    <section>
+                        <header class="title3">
+                            <h3>3.2 Elementos claramente semánticos</h3>
+                        </header>
+                        <ul>
+                            <li>strong</li>
+                            <li>em</li>
+                            <li>sup</li>
+                            <li>sub</li>
+                            <li>small</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <header class="title3">
+                            <h3>3.3 Elementos de tipo técnico</h3>
+                        </header>
+                        <ul>
+                            <li>samp</li>
+                            <li>code</li>
+                            <li>kbd</li>
+                            <li>var</li>
+                            <li>dfn</li>
+                            <li>abbr</li>
+
+                        </ul>
+                    </section>
+                    <section>
+                        <header class="title3">
+                            <h3>3.4 Uso de referencias y citas</h3>
+                        </header>
+                        <ul>
+                            <li>cite</li>
+                            <li>q</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <header class="title3">
+                            <h3>3.5 Otras etiquetas semánticas de html5</h3>
+                        </header>
+                        <ul>
+                            <li>time</li>
+                            <li>mark</li>
+
+                        </ul>
+                    </section>
+                    <section>
+                        <header class="title3">
+                            <h3>3.6 Elementos en linea neutros</h3>
+                        </header>
+
+                        <p>la etiqueta spam no tiene ningún valor semántico</p>
+                    </section>
+                    <section>
+                        <header class="title3">
+                            <h3>Edits</h3>
+                        </header>
+                        <ul>
+                            <p>ins</p>
+                            <p>del</p>
+                        </ul>
+                    </section>
+                </div>
+            </section>
+
+            <figure class="image_wrapper">
+                <img src="assets/html5demo1.jpg" alt="Esquema secciones HTML5">
+                <figcaption>Esquema de las secciones de HTML5</figcaption>
+            </figure>
+    </main>
     <aside>
         <h2>Publicidad</h2>
         <p>Pon aquí tu anuncio</p>
     </aside>
-</div>
-    
+    </div>
+
     <footer class="main_footer">
 
         <address>
