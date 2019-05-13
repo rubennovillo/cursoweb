@@ -45,7 +45,12 @@ table {
 
 /*Fin del reset CSS*/
 
+body{
+    font-family: 'Dosis', sans-serif;
+
+}
 .main_header{
+font-family: 'Acme', sans-serif;
 background-color: rgb(0, 0, 0);
 color: rgb(255,255,255);
 padding-left:1rem;
@@ -89,11 +94,6 @@ img{
     margin-top: 10px;
 
     
-}
-
-p, pre, blockquote {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-
 }
 
 .title3{
@@ -181,4 +181,27 @@ img{
 }
 .clearfix{
     clear: both;
+}
+
+.web_externa {
+    width: 100%;
+    height: 60vh
+}
+
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+.embed-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+video, embed{
+    max-width: 100%;
 }

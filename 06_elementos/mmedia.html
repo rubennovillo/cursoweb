@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Multimedia/Elementos HTML</title>
+    <link href="https://fonts.googleapis.com/css?family=Acme|Dosis" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -75,14 +78,16 @@
 
                         <div class="clearfix"></div>
                         <p>Uso de imagenes responsivas</p>
-                        
-                        <div>
-                        <picture>
-                            <source media="(max-width: 200px)" srcset="./assets/eiffel_pequeña.jpg" type="image/jpg">
-                            <source media="(max-width: 400px)" srcset="./assets/eiffel_mediana.jpg" type="image/jpg">
-                            <img src="./assets/eiffel.jpg" alt="Torre eiffel">
 
-                        </picture>
+                        <div>
+                            <picture>
+                                <source media="(max-width: 200px)" srcset="./assets/eiffel_pequeña.jpg"
+                                    type="image/jpg">
+                                <source media="(max-width: 400px)" srcset="./assets/eiffel_mediana.jpg"
+                                    type="image/jpg">
+                                <img src="./assets/eiffel.jpg" alt="Torre eiffel">
+
+                            </picture>
                         </div>
 
 
@@ -92,6 +97,42 @@
                         <section class="seccion_otros">
 
                         </section>
+                        <section>
+                            <h3>Video y Audio</h3>
+                            <p>Es posible incluir un video desde una fuente externa</p>
+                            <iframe width="560" height="315" src=""
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+
+                            <div class="embed-container">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/gbc7Z92b7SI"
+                                    frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <p>Otra opción es reproducir videos de nuestro servidor</p>
+
+                            <video controls>
+                                <source src="./assets/Ghost_in_the_Shell_Opening.webm" type="video/webm">
+                                <source src="./assets/Ghost_in_the_Shell_Opening.mp4" type="video/mp4">
+
+                            </video>
+
+                        </section>
+                        <section>
+                            <h3>Elementos de Navegación Gráficos</h3>
+                            <p>
+                                en html antiguo se usaba la etiqueta map para definir un hotspot
+                            </p>
+                            <embed src="./assets/logo.svg" type="image/svg+xml">
+                            <p>También relacionado con la navegación gráfica estaría el</p>
+                        </section>
+                        <aside>
+                            <h3>Elementos enbebidos no multimedia</h3>
+                            <p>la etiqueta iframe permite aceder a otra web desde la nuestra</p>
+                            <iframe class="web_externa" src="https://www.tajamar.es"></iframe>
+                            <p>Otras formas de insertar contenido externo son object y embed</p>
+                            <object data="https://www.tajamar.es" type=""></object>
+                            <embed src="https://www.tajamar.es" type="">
+                        </aside>
             </section>
     </main>
     <aside>
@@ -105,6 +146,14 @@
             <p>Rubén Novillo Díaz - Tajamar</p>
             <a href="mailto://rubennd1990@gmail.com">Enviar correo</a>
             <p>&copy;derechos reservados</p>
+            <aside>
+                <ul>
+                    <li><a href="https://es-es.facebook.com/" rel="external"><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a href="https://es.linkedin.com/" rel="external"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://www.instagram.com/" rel="external"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://github.com/rubennovillo" rel="external"><i class="fab fa-github-square"></i></a></li>
+                </ul>
+            </aside>
         </address>
 
     </footer>
