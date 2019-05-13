@@ -69,6 +69,7 @@ h1{
 
 .main_footer{
 background-color: rgb(255, 196, 123);
+text-align: center;
 }
 
 .content_wrapper{
@@ -205,3 +206,25 @@ img{
 video, embed{
     max-width: 100%;
 }
+
+    .main_footer aside{
+    list-style-type: none;
+    margin-left:-1rem;
+    }
+    .main_footer aside ul{
+    
+    }
+    .main_footer aside li{
+    display: inline-block;
+    }
+    .main_footer aside a{
+        color:inherit;
+        text-decoration: none;
+        display:block;
+        padding:1rem;
+    }
+
+    .iframe_footer{
+        width: 100%;
+        height: 10vh;
+    }

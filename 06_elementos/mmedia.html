@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Multimedia/Elementos HTML</title>
-    <link href="https://fonts.googleapis.com/css?family=Acme|Dosis" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
@@ -15,14 +17,16 @@
 
 <body id="Inicio">
     <Header class="main_header">
-        <h1>Etiquetas de HTML</h1>
+        <h1>Etiquetas de HTML<i class="fab fa-html5"></i></h1>
         <p>Clasificación de las etiquetas según el estándar HTML5.2</p>
         <nav>
             <ul>
                 <li><a href="./index.html#sections">Sections</a></li>
-                <li><a href="./index.html#Grouping">Grouping</a></li>
+                <li><a href="./index.html#agrupaciones">Grouping</a></li>
                 <li><a href="./index.html#Niveles_del_texto">Text-level</a></li>
                 <li><a href="./mmedia.html">Multimedia</a></li>
+                <li><a href="./datos.html#tablas">Tablas</a></li>
+                <li><a href="./datos.html#formularios">Formularios</a></li>
             </ul>
         </nav>
     </Header>
@@ -70,9 +74,11 @@
                             <img srcset="./assets/komodo.300.jpg 300w,
                                         ./assets/komodo.400.jpg 400w,
                                         ./assets/komodo.500.jpg 500w,
-                                        ./assets/komodo.jpg 600w" sizes="(max-width: 300px),
-                                        (max-width: 400px),
-                                        (max-width: 500px)" src="./assets/komodo.jpg"
+                                        ./assets/komodo.jpg 600w" 
+                                sizes="(max-width: 300px) 300px,
+                                        (max-width: 400px) 400px,
+                                        (max-width: 500px) 500px," 
+                                src="./assets/komodo.jpg"
                                 alt="Varano de Komodo con lengua fuera">
                         </picture>
 
@@ -130,8 +136,8 @@
                             <p>la etiqueta iframe permite aceder a otra web desde la nuestra</p>
                             <iframe class="web_externa" src="https://www.tajamar.es"></iframe>
                             <p>Otras formas de insertar contenido externo son object y embed</p>
-                            <object data="https://www.tajamar.es" type=""></object>
-                            <embed src="https://www.tajamar.es" type="">
+                            <object data="https://www.tajamar.es" type="text/html"></object>
+                            <embed src="https://www.tajamar.es" type="text/html">
                         </aside>
             </section>
     </main>
@@ -140,21 +146,5 @@
         <p>Pon aquí tu anuncio</p>
     </aside>
     </div>
-    <footer class="main_footer">
-
-        <address>
-            <p>Rubén Novillo Díaz - Tajamar</p>
-            <a href="mailto://rubennd1990@gmail.com">Enviar correo</a>
-            <p>&copy;derechos reservados</p>
-            <aside>
-                <ul>
-                    <li><a href="https://es-es.facebook.com/" rel="external"><i class="fab fa-facebook-square"></i></a></li>
-                    <li><a href="https://es.linkedin.com/" rel="external"><i class="fab fa-linkedin"></i></a></li>
-                    <li><a href="https://www.instagram.com/" rel="external"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="https://github.com/rubennovillo" rel="external"><i class="fab fa-github-square"></i></a></li>
-                </ul>
-            </aside>
-        </address>
-
-    </footer>
+    <iframe class="iframe_footer" src="_footer.html"></iframe>
 </body>
