@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Multimedia/Elementos HTML</title>
+    <title>Datos/Elementos HTML</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
 
@@ -41,54 +42,90 @@
                 </header>
                 <p>El elemento table representa una tabla. Éstas permiten a los autores representar información tabulada en un documento. En lo que respecta al código, una tabla consiste básicamente de un grupo de filas que contiene, cada una, a un grupo de celdas.</p>
                 <p>Ejemplo de tabla del uso de los navegadores</p>
-                <table>
+                <table class="main_table">
                     <tr>
-                        <td></td>
-                        <td>2017</td>
-                        <td>2018</td>
-                        <td>2019</td>
+                        <th></th>
+                        <th>2017</th>
+                        <th>2018</th>
+                        <th>2019</th>
                     </tr>
                     <tr>
-                        <td>Google Chrome</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <th>Google Chrome</th>
+                        <td>61,55%</td>
+                        <td>61,40%</td>
+                        <td>32,59%</td>
                     </tr>
                     <tr>
-                        <td>Safari</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <th>Safari</th>
+                        <td>15,13%</td>
+                        <td>15,23%</td>
+                        <td>10,79%</td>
                     </tr>
                     <tr>
-                        <td>Explorer</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <th>Explorer</th>
+                        <td>2,93%</td>
+                        <td>3,57%</td>
+                        <td>6,36%</td>
                     </tr>
                     <tr>
-                        <td>Mozilla</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <th>Mozilla</th>
+                        <td>4,92%</td>
+                        <td>5,17%</td>
+                        <td>2,65%</td>
                     </tr>
                     <tr>
-                        <td>Edge</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <th>Edge</th>
+                        <td>4,46%</td>
+                        <td>4,71%</td>
+                        <td>5,21%</td>
                     </tr>
                     <tr>
-                        <td>Opera</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <th>Opera</th>
+                        <td>3,16%</td>
+                        <td>3,21%</td>
+                        <td>2,97%</td>
                     </tr>
                     <tr>
-                        <td>Otros</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <th>Otros</th>
+                        <td>7,85%</td>
+                        <td>7,35%</td>
+                        <td>23,01%</td>
+                    </tr>
+                </table>
+                <p>Ejemplo de tabla irregular</p>
+
+                <table  class="main_table">
+                    <tr>
+                        <th rowspan="2" colspan="2">Preferencias de viajes</th>
+                        <th colspan="3">Destinos</th>
+                        
+                    </tr>
+                    <tr>
+                        <th scope="col">Caribe</th>
+                        <th scope="col">Europa</th>
+                        <th scope="col">Oriente</td>
+                        
+                    </tr>
+                    <tr>
+                        <th rowspan="3" scope="rowgroup">Rangos de edad</th>
+                        <th scope="row">menores de 18</th>
+                        <td>38%</td>
+                        <td>25%</td>
+                        <td>37%</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Entre 18 y 30</th>
+                        <td>32%</td>
+                        <td>37%</td>
+                        <td>31%</td>
+                        
+                    </tr>
+                    <tr>
+                        <th scope="row">Mas de 30</th>
+                        <td>30%</td>
+                        <td>38%</td>
+                        <td>32%</td>
+                        
                     </tr>
                 </table>
             </section>
@@ -96,6 +133,25 @@
                 <header>
                     <h2>Formularios</h2>
                 </header>
+                <p>Los formularios se incluyen dentro de la etiqueta form. En ellos se utilizan los siguientes controles.</p>
+                <ul>
+                    <li>Imput-text</li>
+                    <li>Text area</li>
+                    <li>Checkbox</li>
+                    <li>Radio buttons</li>
+                    <li>Select / Options</li>
+                    <li>Botones</li>
+                </ul>
+                <p>La etiqueta form tiene dos atributos importantes</p>
+                <ul>
+                    <li>action</li>
+                    <li>method</li>
+                </ul>
+                <form action="https://jsonplaceholder.typicode.com/users" method="POST">
+                    <input type="text" name="userName" placeholder="Dime tu nombre">
+                    <input type="password" name="Pass" placeholder="Contraseña">
+                    <button type="submit">Enviar</button>
+                </form>
             </section>
             </div>
     </main>

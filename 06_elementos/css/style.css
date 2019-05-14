@@ -228,3 +228,25 @@ video, embed{
         width: 100%;
         height: 10vh;
     }
+
+    .main_table{
+        width: 50%;
+        text-align: center;
+        
+
+    }
+
+    .main_table tr th{
+        background:rgb(1, 71, 1);
+        color:rgb(255, 230, 162);
+        vertical-align: middle;
+        padding: 1rem;
+    }
+
+    .main_table tr td{
+        background:rgb(255, 230, 162);
+        color:rgb(1, 71, 1);
+        padding: 1rem;
+        border: solid, 1px, white;
+        vertical-align: middle;
+    }
