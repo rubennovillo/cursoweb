@@ -166,14 +166,30 @@
                         <legend class="legend_form">Condiciones</legend>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero praesentium accusantium alias quo officia dignissimos voluptatum voluptatem, repellendus similique nihil nemo assumenda odit accusamus deserunt maxime dolore quod aliquam ipsum!</p>
                         <input class="form_control" type="checkbox" name="isOk" id="isOk">
+                        <label for="isOk">Estoy de acuerdo</label>
                     </fieldset>
                     <fieldset>
                         <legend class="legend_form">Datos del curso</legend>
                         <label for="curso" class="form_label">Curso</label>
-                        <select name="curso" id="curso" class="form_label"></select>
-                        <option value="">Diseño web</option>
-                        <option value="">Diseño gráfico</option>
-                        <option value="">Programación Java</option>
+                        <select name="curso" id="curso" class="form_label">
+                       <optgroup label="Diseño">
+                        <option value="0" selected>Adobe</option>
+                        <option value="1">Diseño gráfico</option>
+                        <option value="3">Linux</option>
+                        <option value="4">Javascript</option>
+                        <option value="5">fotoshop</option>
+                       </optgroup>
+                       <optgroup label="Programación">
+                        <option value="6">Back end</option>
+                        <option value="7">Desarrollo web</option>
+                       </optgroup>
+                       <p>Ubicación</p>
+                       <input type="radio" name="sitio" value="sv" id="Sevilla"> Sevilla
+                        <input type="radio" name="sitio" value="md" id="Madrid"> Madrid
+                        <input type="radio" name="sitio" value="bc" id="Barcelona"> Barcelona
+                           
+
+                    </select>
 
                     </fieldset>
 
