@@ -250,3 +250,23 @@ video, embed{
         border: solid, 1px, white;
         vertical-align: middle;
     }
+
+    .form_control{
+        display: block;
+        width:100%;
+        border: none;
+        border-bottom: 1px solid grey;
+        padding-top: 1rem;
+        padding-bottom:0.2rem;
+    }
+
+    fieldset{
+        margin-bottom: 1rem;
+    }
+
+    .legend_form{
+        margin-bottom:2rem;
+        font-size: 6mm;
+        color: green;
+    }
+    
