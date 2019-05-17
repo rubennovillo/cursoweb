@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <script src="./js/app.js" type="module"></script>
 
 </head>
 
@@ -34,8 +35,9 @@
             </ul>
         </nav>
     </Header>
+    <div class="content_wrapper">
     <main>
-        <div class="content_wrapper">
+        
             <section id="tablas">
                 <header>
                     <h2>Tablas</h2>
@@ -194,16 +196,68 @@
                     </fieldset>
 
                     <button type="submit">Enviar</button>
-                   
-                </form>
+                    <button type="submit">
+                            Enviar <i class="fas fa-paper-plane"></i>
+                        </button>
+                        <input type="reset" value="Borrar">
+                        <button type="reset">
+                            Borrar <i class="fas fa-eraser"></i>
+                        </button>
+                        <button type="button">Sin uso</button>
+                    </form>
+                    <p>Existen otros controles de formulario</p>
+                    <dl>
+                        <dt class="dt">Input color</dt>
+                        <dd class="dd"><input type="color"></dd>
+                        <dt class="dt">Input file</dt>
+                        <dd class="dd"><input type="file"></dd>
+                        <dt class="dt">Input number</dt>
+                        <dd class="dd"><input type="number" min="0" max="10" step="2"></dd>
+                        <dt class="dt">Input range</dt>
+                        <dd class="dd"><input type="range" min="-1" max="1"></dd>
+                        <dt class="dt">Input search</dt>
+                        <dd class="dd"><input type="search"></dd>
+                        <dt class="dt">Input tel</dt>
+                        <dd class="dd"><input type="tel"></dd>
+                        <dt class="dt">Input url</dt>
+                        <dd class="dd"><input type="url"></dd>
+                    </dl>
+                    <div class="clearfix"></div>
             </section>
-            </div>
+            <section id="interactivos">
+                <header>
+                    <h2>Elementos Interactivos</h2>
+                </header>
+                <h3>Details</h3>
+                <p>Permite crear un bloque con información extra que se muestra opcionalmente</p>
+                <details>
+                    <summary>Crear opciones vacias</summary>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed doloremque amet, eum quam ipsam voluptatem in blanditiis voluptate eos! Ad nesciunt voluptates sapiente nisi vero temporibus maxime recusandae, consequuntur expedita?</p>
+                </details>
+                <h3>Dialog</h3>
+                <p>La etiqueta dialog, novedad de html5.2, corresponde a lo que se conoce como una ventana modal</p>
+                <dialog id="dlg-sample">
+                    <img src="./assets/005.gif" alt="">
+                    <!-- <button type="button" id="btn-cerrar">cerrar</button> -->
+                </dialog>
+                <button type="button" id="btn-info">Mostrar información modal</button>
+                <h3>Templates</h3>
+                <template id="">
+                    <p></p>
+                </template>
+                <section id="cnv-sample" class="canvas">
+                    
+                </section>
+            </section>
+        
     </main>
+    
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.554245279715!2d-3.6531417342942567!3d40.39657096478867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe65b1da855dfafd4!2sColegio+Tajamar!5e0!3m2!1ses!2ses!4v1557844982519!5m2!1ses!2ses" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
     <aside>
             <h2>Publicidad</h2>
             <p>Pon aquí tu anuncio</p>
     </aside>
+</div>
     <iframe class="iframe_footer" src="footer.html"></iframe>
 </body>
 </html>

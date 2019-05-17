@@ -205,69 +205,79 @@ video, embed{
     max-width: 100%;
 }
 
-    .main_footer aside{
+.main_footer aside{
     list-style-type: none;
     margin-left:-1rem;
-    }
-    .main_footer aside ul{
+}
+.main_footer aside ul{
     
-    }
-    .main_footer aside li{
+}
+.main_footer aside li{
     display: inline-block;
-    }
-    .main_footer aside a{
+}
+.main_footer aside a{
         color:inherit;
         text-decoration: none;
         display:block;
         padding:1rem;
-    }
+}
 
-    .iframe_footer{
+.iframe_footer{
         width: 100%;
         height: 10vh;
-    }
+}
 
-    .main_table{
+.main_table{
         width: 50%;
         text-align: center;
         
 
-    }
+}
 
-    .main_table tr th{
+.main_table tr th{
         background:rgb(1, 71, 1);
         color:rgb(255, 230, 162);
         vertical-align: middle;
         padding: 1rem;
-    }
+}
 
-    .main_table tr td{
+.main_table tr td{
         background:rgb(255, 230, 162);
         color:rgb(1, 71, 1);
         padding: 1rem;
         border: solid, 1px, white;
         vertical-align: middle;
-    }
+}
 
-    .form_control{
+.form_control{
         display: block;
         width:100%;
         border: none;
         border-bottom: 1px solid grey;
         padding-top: 1rem;
         padding-bottom:0.2rem;
-    }
+}
 
-    fieldset{
+fieldset{
         margin-bottom: 1rem;
-    }
+        border-color: bisque;
+}
 
-    .legend_form{
+.legend_form{
         margin-bottom:2rem;
         font-size: 6mm;
         color: green;
-    }
+}
 
-    form{
-        border:1px;
-    }
+
+.form_label {
+        display: block;
+        margin-top: 1rem;
+}
+
+.canvas{
+    width: 400px;
+    height: 400px;
+    background: bisque;
+    border: 1px solid;
+}
