@@ -129,7 +129,9 @@ blockquote footer{
 
 .def{
     padding-bottom: 1rem;
-    color: green
+    padding-top: 1rem;
+    color: green;
+
 }
 
 .dt{
