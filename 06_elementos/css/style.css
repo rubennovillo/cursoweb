@@ -168,6 +168,11 @@ display: inline-block;
     padding:1rem;
 }
 
+.lista_multimedia{
+    background-image: url("../assets/fondo.jpg");
+    background-repeat: no-repeat;
+}
+
 img{
     max-width:100%;
 }
@@ -203,6 +208,10 @@ img{
 
 video, embed{
     max-width: 100%;
+}
+
+.main_section_footer{
+    float: right;
 }
 
 .main_footer aside{
@@ -280,4 +289,9 @@ fieldset{
     height: 400px;
     background: bisque;
     border: 1px solid;
+}
+
+.publi{
+    display: block;
+    float: center;
 }

@@ -35,10 +35,13 @@
         <div class="content_wrapper">
 
             <section id="multimedia">
-                <h2>Multimedia</h2>
-                <p></p>
+                <header class="title2">
+                    <h2>Multimedia</h2>
+                </header>
+                <p class="def">Antiguamente solo disponiamos de imagenes o texto estilizado, pero actuamente podemos agregar un sistema multimedia mucho mas rico que abarca, audio y video a parte de interactividad con casi cualquier elemento</p>
+                <section class="lista_multimedia">
                 <ul>
-                    <li>imágenes
+                    <li>IMAGENES
                         <ul>
                             <li>jpg</li>
                             <li>gif</li>
@@ -47,19 +50,20 @@
                             <li>webp</li>
                         </ul>
                     </li>
-                    <li>video y audio
+                    <li>VIDEO Y AUDIO
                         <ul>
                             <li>Divx</li>
                             <li>Mp4</li>
                             <li>Avi</li>
                         </ul>
                     </li>
-                    <li>elementos de navegación gráficos</li>
+                    <li>ELEMENTOS DE NAVEGACIÓN GRÁFICA</li>
                 </ul>
-                <section class="title3">
-                    <h3>imagenes</h3>
-                </section>
-                <section class="seccion_imagenes">
+            </section>
+            <section class="seccion_imagenes">
+                <header class="title3">
+                    <h3>Imagenes</h3>
+                </header>
                     <!-- <img src="./assets/komodo.jpg" alt="Varano de Komodo con lengua fuera"> -->
 
                     <img src="./assets/WoodElf.png" alt="Elfo del bosque">
@@ -75,11 +79,9 @@
                             <img srcset="./assets/komodo.300.jpg 300w,
                                         ./assets/komodo.400.jpg 400w,
                                         ./assets/komodo.500.jpg 500w,
-                                        ./assets/komodo.jpg 600w" 
-                                sizes="(max-width: 300px) 300px,
+                                        ./assets/komodo.jpg 600w" sizes="(max-width: 300px) 300px,
                                         (max-width: 400px) 400px,
-                                        (max-width: 500px) 500px," 
-                                src="./assets/komodo.jpg"
+                                        (max-width: 500px) 500px," src="./assets/komodo.jpg"
                                 alt="Varano de Komodo con lengua fuera">
                         </picture>
 
@@ -104,18 +106,16 @@
                         <section class="seccion_otros">
 
                         </section>
-                        <section>
+                        <section id="audioYVideo">
+                                <header class="title3">
                             <h3>Video y Audio</h3>
-                            <p>Es posible incluir un video desde una fuente externa</p>
-                            <iframe width="560" height="315" src=""
-                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-
+                                </header>
+                            <p class="def">Es posible incluir un video desde una fuente externa</p>
                             <div class="embed-container">
                                 <iframe width="560" height="315" src="https://www.youtube.com/embed/gbc7Z92b7SI"
                                     frameborder="0" allowfullscreen></iframe>
                             </div>
-                            <p>Otra opción es reproducir videos de nuestro servidor</p>
+                            <p class="def">Otra opción es reproducir videos de nuestro servidor</p>
 
                             <video controls>
                                 <source src="./assets/Ghost_in_the_Shell_Opening.webm" type="video/webm">
@@ -124,8 +124,10 @@
                             </video>
 
                         </section>
-                        <section>
+                        <section id="navegacionGrafica">
+                                <header class="title3">
                             <h3>Elementos de Navegación Gráficos</h3>
+                            </header>
                             <p>
                                 en html antiguo se usaba la etiqueta map para definir un hotspot
                             </p>
@@ -141,11 +143,13 @@
                             <embed src="https://www.tajamar.es" type="text/html">
                         </aside>
             </section>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.554245279715!2d-3.6531417342942567!3d40.39657096478867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe65b1da855dfafd4!2sColegio+Tajamar!5e0!3m2!1ses!2ses!4v1557844982519!5m2!1ses!2ses" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.554245279715!2d-3.6531417342942567!3d40.39657096478867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe65b1da855dfafd4!2sColegio+Tajamar!5e0!3m2!1ses!2ses!4v1557844982519!5m2!1ses!2ses"
+                width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
     </main>
-    <aside>
-        <h2>Publicidad</h2>
-        <p>Pon aquí tu anuncio</p>
+    <aside class="publi">
+        <header>PlayStation</header>
+        <img src="./assets/ps.com-listing-thumb-01-eu-09may18.png" alt="">
     </aside>
     </div>
     <iframe class="iframe_footer" src="footer.html"></iframe>
