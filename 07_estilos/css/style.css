@@ -20,6 +20,15 @@ body{
 .sample{
     color: blue;
 }
+
+/* selector de id */
+/* selectores agrupados */
+/* Selectores combinados */
+/* Selectores de hijo (child) */
+/* Selector descendientes (descendent) */
+.combinadores p{
+    color:green;
+}
 /* Forma mas habitual de usar media Queries */
 
 @media screen and (max-device-width: 500px) {

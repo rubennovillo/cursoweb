@@ -1,0 +1,47 @@
+
+/*************************
+Estilos del header
+**************************/
+header{
+    background-color:rgb(255, 208, 0) ;
+    color:black;
+
+}
+
+
+
+/* SELECTORES COMBINADOS */
+/* Selectores de hijo (child) > */
+/* Selector descendientes (descendent) */
+/* selectores hermanos (sibilings) ~*/
+.combinadores div~p {
+    background: gold;
+}
+/* selectores adyacentes (adyacent sibilings) +*/
+.combinadores div+p{
+    background: pink;
+}
+/* Selector de atributo (^ * $) */
+
+[title] {
+    color: violet;
+}
+[title="Extra"]{
+    color:green;
+}
+
+[title^="Parrafo"]{
+    background: bisque;
+}
+/**************************
+Estilos de footer
+ *************************/
+
+ footer{
+     background: brown;
+    color:rgb(255, 208, 0);
+ }
+ footer address{
+     font-style: none;
+ }
+
