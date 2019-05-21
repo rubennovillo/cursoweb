@@ -24,7 +24,7 @@ header{
 /* Selector de atributo (^ * $) */
 
 [title] {
-    color: violet;
+    color: rgb(255, 34, 255);
 }
 [title="Extra"]{
     color:green;
@@ -44,4 +44,56 @@ Estilos de footer
  footer address{
      font-style: none;
  }
+
+ /********************************
+Estilos de section pseudo-elementos
+ ********************************/
+.pseudo-elementos p::first-letter{
+    font-size: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(0, 174, 255);
+}
+.pseudo-elementos p::first-line{
+    font-style: italic;
+    font-weight: bold;
+}
+.pseudo-elementos .medio{
+color: brown;
+}
+/* .pseudo-elementos .medio::after,
+.pseudo-elementos .medio::before{
+    content: "Muy importante";
+    margin-top: 0.5px;
+    margin-bottom:0.5px;
+    background: salmon;
+} */
+
+.banda{
+    content: "Muy importante";
+    margin-top: 0.5px;
+    margin-bottom:0.5px;
+    background: salmon;
+}
+
+body{
+    counter-reset:parrafos;
+}
+
+.numerados p::before{
+    counter-increment: parrafos;
+    content:counter(parrafos, lower-greek) " - ";
+    font-weight:bold;
+}
+.comillas{
+    quotes:"\00AB" "\00BB"
+}
+
+.comillas p::before{
+    content:open-quote;
+}
+.comillas p::after{
+    content:close-quote;
+}
+
+
 
