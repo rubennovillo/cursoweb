@@ -1,0 +1,122 @@
+@charset "utf-8";
+/* CSS Document */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	font-weight: normal;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*Fin del Resset*/
+
+#cabeceraweb{
+			text-align:end;
+			font-size:30px;
+			font-family:Comic Sans MS, cursive;
+			color:#06C;
+			height:50px;
+			margin-left:360px;
+			margin-right:360px;}
+
+#navegacionprincipal{background-color:#FFF;
+			font-family:Verdana, Geneva, sans-serif;
+			font-size:18px;
+			list-style-type:none;
+			text-align:center;
+			height:25px;
+			margin-left:360px;
+			margin-right:360px;}
+			
+#navegacionprincipal ul{
+   list-style-type: none;
+   text-align: center;
+}
+#navegacionprincipal li{
+   display: inline;
+   text-align: center;
+   margin: 0 10px 0 0;
+}
+li a {
+   padding: 2px 7px 2px 7px;
+   text-decoration: none;
+}
+li a:hover{
+   background-color: #333333;
+   color: #ffffff;
+}
+#barralateral{background-color:#FFDECE;
+			margin-top:50px;
+			color:#000;
+			float:right;
+			width:350px;
+		}
+
+
+#contenidoprincipal{background-color:#FFF;
+					margin-top:50px;
+					margin-right:360px;
+					margin-left:360px
+					}
+#contenidoprincipal p{
+			font-family:Palatino Linotype, Book Antiqua, Palatino, serif;
+			font-size:18px;
+			text-align:justify;
+			line-height:normal;
+}
+
+#pieprincipal{background-color:#FCC;}
+
+#h2{font-size:24px;
+	font-family:Palatino Linotype, Book Antiqua, Palatino, serif;
+
+}
+
+#navegacionsecundaria li{
+			font-family:Palatino Linotype, Book Antiqua, Palatino, serif;
+			font-size:18px;
+			list-style-type:none;
+			height:25px;
+}
+#navegacionsecundaria h3{
+			font-family:Palatino Linotype, Book Antiqua, Palatino, serif;
+			font-size:24px;
+}
+p.primeralinea {
+            text-indent: 50px;
+ 
