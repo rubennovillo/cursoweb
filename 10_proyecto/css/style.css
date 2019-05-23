@@ -2,6 +2,7 @@
 :root {
     --color-letra: bisque;
     --color-fondo: rgb(106, 43, 255);
+    --color-article:  rgb(181, 225, 255);
     --font-main: 'Source Sans Pro', sans-serif;
     --font-title: 'Stylish', sans-serif;
     --size-subtitle: 1.5rem;
@@ -14,6 +15,7 @@
 }
 
 *{
+    box-sizing: border-box;
     margin:0;
     padding:0;
     border:none;
@@ -38,6 +40,7 @@
    
     font-family: var(--font-title);
     font-size: var(--size-title);
+    color: var(--color-letra);
     
 }
 
@@ -69,19 +72,60 @@ main{
    
 }
 
-main h2{
+main h3{
 font-size: var(--size-title2);
 margin: var(--margin-vertical);
+color: var(--color-fondo);
 
 }
 
 main p{
-    margin: calc(var(--margin-vertical)/2);
+    margin: calc(var(C)/2);
 }
 
 section{
-    display: inline-block;
-    width: 49%;
+   margin: var(--margin-vertical) 
+}
+
+section article{
+    width: 50%;
     vertical-align:top;
-    background-color: rgb(181, 225, 255);
+    padding: 1rem;
+    background-color: var(--color-article);
+    border: 1px solid var(--color-fondo);
+}
+
+section.inline_block article{
+
+    display: inline-block;
+    
+    
+}
+
+section.inline_block article:nth-of-type(2) {
+    margin-left: -3px;
+
+}
+section.float article{
+    float: left;
+}
+
+section.float::after{
+    content:'';
+    display: block;
+    clear: both;
+}
+
+section.table{
+    display: table;
+}
+
+section.table article{
+    display: table-cell;
+
+}
+
+section.flex{
+    display: flex;
+    /*align-items:*/
 }
