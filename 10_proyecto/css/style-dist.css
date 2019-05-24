@@ -1,6 +1,6 @@
 /* Paleta de colores */
 :root {
-    --back-body:linear-gradient(rgb(255, 255, 255),rgb(255, 220, 174)) ;
+    --back-body:linear-gradient(#B4C5E4,#3D52D5) ;
     --color-letra: bisque;
     --color-fondo: rgb(106, 43, 255);
     --color-article:  rgb(181, 225, 255);
@@ -10,6 +10,8 @@
     --size-title: 3rem;
     --size-title2: 2.2rem;
     --size-title3: 1.3rem;
+    --size-base: -webkit-calc(15rem/16);
+    --size-base: -moz-calc(15rem/16);
     --size-base: calc(15rem/16);
     --margin-vertical: 1.5rem;
     --margin-horizontal: 2rem;
@@ -17,12 +19,18 @@
 }
 
 *{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
     margin:0;
     padding:0;
     border:none;
     font-size: 100%;
     font:inherit;
+background-image: -webkit-gradient(linear,left top, left bottom,from(#fff),to(f2));
+background-image: -webkit-linear-gradient(#fff,f2);
+background-image: -moz-linear-gradient(#fff,f2);
+background-image: -o-linear-gradient(#fff,f2);
 background-image: linear-gradient(#fff,f2)
 }
 
@@ -33,6 +41,7 @@ background-image: linear-gradient(#fff,f2)
     padding-top: 1rem;
     padding-bottom: 1rem;
     margin-bottom:1rem;
+    -webkit-border-radius: 50px;
     border-radius: 50px;
     text-align: center;
 }
@@ -88,6 +97,8 @@ font-size: var(--size-title3);
 }
 
 main p{
+    margin: -webkit-calc(var(C)/2);
+    margin: -moz-calc(var(C)/2);
     margin: calc(var(C)/2);
 }
 
@@ -134,7 +145,17 @@ section .table article{
 }
 
 section .flex{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+    -webkit-flex-direction:column;
+    -moz-box-orient:vertical;
+    -moz-box-direction:normal;
+    -ms-flex-direction:column;
     flex-direction:column;
     /*align-items: center*/
 }
@@ -146,6 +167,12 @@ section .flex article{
 
 @media screen and (min-width: 900px) {
     section .flex{
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -moz-box-orient: horizontal;
+    -moz-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
 }
 }
