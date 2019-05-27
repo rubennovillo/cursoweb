@@ -5,7 +5,67 @@
     font-style: normal;
 
 }
+@font-face {
+    font-family: 'antient';
+    src: url('../assets/fuentes/Antient.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    
+
+}
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    border:none;
+    font-size: 100%;
+    font:inherit;
+}
 
 body{
-    font-family: 'kaushan_scriptregular' 
+    font-family: serif; 
+    background-color: rgb(255, 255, 240);
+
+}
+
+h1{
+    font-family: 'antient';
+    font-size: 4rem;
+    font-weight: normal;
+    color: rgb(46, 130, 255)
+}
+
+.def{
+    font-family: 'kaushan_scriptregular';
+    font-size: 2rem;
+    font-weight: normal;
+    border-bottom: 10px solid  rgb(46, 130, 255);
+    border-left: double 10px rgb(46, 130, 255);
+    background-color: rgb(254, 255, 167)
+
+}
+
+p{
+    font-size: 1,2em;
+    width: 50%;
+    vertical-align:top;
+    background-color: rgb(254, 255, 167);
+    padding: 1rem;
+    border-left: 5px double  rgb(46, 130, 255);
+    margin-top: 25px;
+}
+section .flex{
+    display: flex;
+    flex-direction:column;
+    /*align-items: center*/
+}
+
+section .flex p{
+    width: 100%
+}
+
+
+@media screen and (min-width: 900px) {
+    section .flex{
+    flex-direction: row;
 }
