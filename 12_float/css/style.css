@@ -1,0 +1,12 @@
+main{
+    margin:5%;
+}
+.img_wrapper{
+    width:50%;
+    float: left;
+    padding-right: 2rem;
+}
+img{
+    max-width:100%;
+    border-radius:25px;
+}

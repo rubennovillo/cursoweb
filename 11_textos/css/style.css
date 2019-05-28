@@ -53,6 +53,9 @@ p{
     padding: 1rem;
     border-left: 5px double  rgb(46, 130, 255);
     margin-top: 25px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 2000px;
+
 }
 section .flex{
     display: flex;
@@ -61,11 +64,47 @@ section .flex{
 }
 
 section .flex p{
-    width: 100%
+    width: 100%;
+    margin:1rem;
+    
 }
 
 
 @media screen and (min-width: 900px) {
     section .flex{
     flex-direction: row;
+}
+
+.centrada p{
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 2rem;
+}
+
+}
+.espacios::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.espacios {
+    /* display:flex; */
+    margin-left: 1rem;
+    margin-right: 1rem;
+    background-color:rgb(254, 255, 167);
+}
+
+
+.espacios p{
+    padding: 1rem;
+    background-color: white;
+    width: 30%;
+    float: left;
+    margin-left: 2.5%;
+}
+
+
+@media screen and (min-width: 650px){
+
 }
