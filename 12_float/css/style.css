@@ -1,12 +1,75 @@
 main{
     margin:5%;
 }
-.img_wrapper{
-    width:50%;
+.img_wrapper_right{
+    width:45%;
     float: left;
     padding-right: 2rem;
+    clear: both;
 }
 img{
     max-width:100%;
     border-radius:25px;
+    border: double 3px;
+}
+.img_wrapper_left{
+    width:45%;
+    float: right;
+    padding: 2rem;
+    clear: both;
+}
+
+.main_header{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(/12_float/assets/bandera-francesa.jpg);
+    color:gold;
+
+}
+.aside_header{
+    text-align: center;
+    background-color: chocolate;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 1rem;
+    border-radius:20%;
+}
+
+.main_lista li{
+    list-style-type: none;
+}
+
+.img_wrapper_aside{
+    width:30%;
+    float: left;
+    padding: 2rem;
+    background-image: url(/12_float/assets/fondo.jpg);
+    border: solid 2px;
+    margin-right:2rem;
+    clear: both;
+}
+
+.table{
+    width: 50%;
+    text-align: center;
+    border-spacing: 5px;
+    float: right;
+}
+
+th{
+    background:rgb(1, 71, 1);
+    color:rgb(255, 230, 162);
+    vertical-align: middle;
+    padding: 1rem;
+}
+
+
+td{
+    border: 3px double rgb(1, 71, 1);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(255, 230, 162);
+}
+
+footer{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: underline;
 }
