@@ -1,0 +1,19 @@
+body{
+    margin:0;
+    
+}
+
+header{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(0, 0, 0);
+    min-height: 100vh;
+    background-color: rgb(0, 96, 121);
+    display: flex;
+    justify-content: center; /*Horizontal*/
+    align-items: center;
+    background-image: url(/14_Fondos/assets/betta0000.png);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size:cover;
+    background-blend-mode: screen;
+}
