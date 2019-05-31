@@ -129,10 +129,34 @@ display:flex;
 
 
 .main_inicio{
-    padding: 5%;
-    background-color: rgb(255, 245, 213);
+   
 }
 .main_footer{
     background-color: #000;
     color: bisque;
+}
+.screen{
+    display:flex;
+}
+
+.nav2{
+    display:inline-flex;
+    width: 700px;
+    height: 1000px;
+    border-left: solid 2px;
+}
+.artic_inicio{
+    padding: 5%;
+    background-color: rgb(255, 245, 213);
+}
+.artic_inicio header{
+font-family: 'aaargh';
+font-size: 2rem;
+margin-bottom: 2rem;
+
+}
+.artic_inicio p{
+    font-family: 'anticsans';
+    line-height:1.3rem;
+    padding:5px;
 }
