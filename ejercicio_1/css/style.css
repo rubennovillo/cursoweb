@@ -1,5 +1,138 @@
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	font-weight: normal;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+@font-face{
+    font-family: 'antiqua';
+    src: url(../assest/fonts/Chantelli_Antiqua.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'anticsans';
+    src: url(../assest/fonts/AnticSans-Regular.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'elmissiri';
+    src: url(../assest/fonts/elmessiri-regular.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'aaargh';
+    src: url(../assest/fonts/Aaargh.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
 
+
+
+
+.main_header{
+    background-image: url(/ejercicio_1/assest/banner.jpg);
+    min-height: 60vh;
+    background-repeat:no-repeat;
+    background-size:cover;
+    border-bottom:solid 3px;
+    
+}
 h1{
-    background-image: url(/ejercicio_1/assest/banner.jpg)
+font-family:'antiqua';
+font-size: 3rem;
+font-variant: small-caps;
+padding-top: 2rem;
+display:flex;
+
+}
+.subti{
+    margin-bottom: 2rem;
+    text-align: center;
+    font-family: 'elmissiri';
+    font-size: 1.2rem;
+    display:flex;
+}
+
+
+.main_nav li a {
+    font-family:'antiqua';
+    background-color:#000;
+    color:#fff;
+    text-decoration:none;
+    padding:10px 17px;
+	display:block;   
+}
+.main_nav >ul > li {
+    float:left;
+
+}
+
+.main_nav li a:hover {
+    background-color:#434343;
+    
+}
+
+.main_nav li ul {
+    display:none;
+    position:absolute;
+    
+}
+
+.main_nav li:hover > ul {
+    display:block;
+}
+
+.main_nav li ul li {
+    position:relative;
+}
+
+
+.main_inicio{
+    padding: 5%;
+    background-color: rgb(255, 245, 213);
+}
+.main_footer{
+    background-color: #000;
+    color: bisque;
 }
