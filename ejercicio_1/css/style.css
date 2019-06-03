@@ -71,7 +71,7 @@ table {
 
 
 .main_header{
-    background-image: url(/ejercicio_1/assest/banner.jpg);
+    background-image: url(../assest/banner.jpg);
     min-height: 60vh;
     background-repeat:no-repeat;
     background-size:cover;
