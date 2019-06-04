@@ -1,0 +1,91 @@
+body{
+    margin:0;
+    
+}
+header{
+    position:relative;
+    min-height: 100vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(0, 0, 0);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center; /*Horizontal*/
+    align-items: center;
+    
+    
+}
+header::after{
+    content:'';
+    display: block;
+    height:100%;
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+    top:0;
+    left:0;
+    opacity: 0.3;
+    background-image: url(../assets/betta0000.png);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size:cover;
+}
+
+h1{
+    color:rgb(170, 52, 107);
+    z-index: 20;
+}
+
+.logo{
+    display:block;
+    position: absolute;
+    top:2rem;
+    right:2rem;
+    margin:0;
+}
+
+.logo img{
+    max-width: 40%;
+    min-width: 80px;
+}
+
+.content.wrapper{
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+.menu{
+    z-index: 20;
+    position:absolute;
+    top:55%;
+
+    
+}
+.menu a {
+    background-color:rgb(0, 4, 255);
+    color:#fff;
+    text-decoration:none;
+    padding:20px 30px;
+    display:block;
+}
+.menu >ul > li {
+    float:left;
+
+}
+.menu ul{
+    list-style: none;
+}
+
+
+.menu li ul {
+    display:none;
+    position:absolute;
+    
+}
+.menu li a:hover {
+    background-color:#0099ff;
+    
+}
+
+.menu li:hover > ul {
+    display:block;
+    position: absolute;
+}

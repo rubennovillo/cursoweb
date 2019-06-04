@@ -8,15 +8,18 @@ body {
 header, footer {
     background-color: rgb(43, 115, 197);
     color: bisque;
-    min-height: 10vh;
+    
     display: flex;
     justify-content: center;
     align-items: center;
 }
+header{
+    min-height: 10vh;
+}
 
 main {
     width: 90%;
-    margin: 1rem auto;
+    margin: 1rem auto 5rem auto;
     min-height: 80vh;
 }
 
@@ -49,4 +52,41 @@ p {
     bottom: 0;
     left: 0;
     right: 0;
+    overflow: hidden;
+    height: 1,3rem;
+    align-items: flex-start;
+    text-align: center;
+}
+
+.fixed:hover{
+    height: auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    align-items: center;
+
+}
+
+
+.overflow{
+    height: 20vh;
+    overflow: scroll;
+}
+/* width */
+.overflow::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.overflow::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+/* Handle */
+.overflow::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+.overflow::-webkit-scrollbar-thumb:hover {
+  background: #555; 
 }
