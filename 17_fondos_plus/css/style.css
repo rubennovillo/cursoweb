@@ -1,3 +1,7 @@
+@font-face{
+    font-family: 
+}
+
 body{
     margin:0;
     
@@ -35,43 +39,52 @@ h1{
     z-index: 20;
 }
 
-.logo{
-    display:block;
-    position: absolute;
-    top:2rem;
-    right:2rem;
-    margin:0;
-}
-
-.logo img{
-    max-width: 40%;
-    min-width: 80px;
-}
-
 .content.wrapper{
     margin-left: 4rem;
     margin-right: 4rem;
 }
-.menu{
-    z-index: 20;
+.menu,
+nav.icon
+{   z-index: 30;
     position:absolute;
-    top:55%;
+    top:55%;   
+}
+nav.menu{
+    display:none;
+}
 
+nav a{ 
     
-}
-.menu a {
-    background-color:rgb(0, 4, 255);
-    color:#fff;
     text-decoration:none;
-    padding:20px 30px;
-    display:block;
+    color:inherit;
 }
+nav.icon{
+    width: 20%;
+    position: absolute;
+    top:10%;
+    left:10%;
+}
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+@media screen and (min-width: 1000px){
+nav.menu{
+        display:block;
+    }
+.menu li a {
+    background: linear-gradient(rgb(74, 74, 255),blue );
+    padding:20px 50px;
+    display:block;
+    color:rgb(155, 235, 255);
+}
+
 .menu >ul > li {
     float:left;
 
-}
-.menu ul{
-    list-style: none;
 }
 
 
@@ -80,12 +93,43 @@ h1{
     position:absolute;
     
 }
-.menu li a:hover {
-    background-color:#0099ff;
-    
+
+.menu li ul li a{
+    margin-top:0.5rem;
 }
 
 .menu li:hover > ul {
     display:block;
     position: absolute;
 }
+
+.list1>a{
+    border-top-left-radius: 40%;
+}
+
+.list2>a{
+    border-top-right-radius: 40%;
+}
+
+.list3>a{
+    border-bottom-left-radius: 40%;
+}
+
+.list4>a{
+    border-bottom-right-radius: 40%;
+}
+.menu li a:hover {
+    background: linear-gradient(rgb(116, 116, 255),rgb(52, 52, 255) );
+    
+}
+.menu li a:focus{
+    background: linear-gradient(rgb(116, 255, 213),rgb(0, 167, 144) );
+    color:rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+}
+
+
+
+

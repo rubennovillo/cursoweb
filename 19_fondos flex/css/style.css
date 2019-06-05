@@ -1,0 +1,78 @@
+body{
+    margin:0;
+    
+}
+header{
+    position:relative;
+    min-height: 100vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* color: rgb(0, 0, 0); */
+    display:flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    
+   
+    
+    
+}
+header::after{
+    content:'';
+    display: block;
+    height:100%;
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+    top:0;
+    left:0;
+    opacity: 0.3;
+    background-image: url(../assets/betta0000.png);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size:cover;
+}
+
+div{
+border:1px solid;
+/* width: 100%; */
+
+}
+
+/* div:nth-of-type(1){
+   
+}
+div:nth-of-type(2){
+   
+} */
+div.superior{
+ flex: 1 1 auto;
+ display: flex;
+}
+div.menu_wrapper{
+    flex: 10 1 auto;
+    display: flex;
+    align-items: center;
+    
+
+}
+div.logo_wrapper{
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div.inferior{
+ flex: 8 1 auto;
+}
+
+.borde{
+
+}
+h1{
+    color:rgb(170, 52, 107);
+    z-index: 20;
+}
+.logo_wrapper img{
+   max-width: 20%;
+   min-width: 80px;
+      
+}
