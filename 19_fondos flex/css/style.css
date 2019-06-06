@@ -2,6 +2,11 @@ body{
     margin:0;
     
 }
+ul li ul{
+    margin:0;
+    padding:0;
+}
+
 header{
     position:relative;
     min-height: 100vh;
@@ -47,6 +52,7 @@ div.superior{
  flex: 1 1 auto;
  display: flex;
  background-color: rgb(119, 237, 253);
+ z-index: 20;
 }
 div.menu_wrapper{
     flex: 20 1 auto;
@@ -72,6 +78,7 @@ div.inferior{
 h1{
     color:rgb(170, 52, 107);
     z-index: 20;
+    text-align: center;
 
 }
 .logo_wrapper img{
@@ -120,17 +127,130 @@ ul{
 ul a{
     text-decoration: none;
 }
+.menu li a {
+    background: linear-gradient(rgb(74, 74, 255),blue );
+    padding:20px 50px;
+    display:block;
+    color:rgb(155, 235, 255);
 
-@media screen and (min-width: 800px){
-    .content_wrapper{
-        
-        display: flex;
-        flex-wrap: wrap;
-
-    }
-    section{
-        width:40%;
-        padding-left:2rem;
-    }
 }
 
+.menu >ul > li {
+    float:left;
+
+}
+
+
+.menu li ul {
+    display:none;
+    position:absolute;
+    
+}
+
+.menu li ul li a{
+    margin-top:0.5rem;
+}
+
+.menu li:hover > ul {
+    display:block;
+    position: absolute;
+}
+
+.list1>a{
+    border-top-left-radius: 40%;
+}
+
+.list2>a{
+    border-top-right-radius: 40%;
+}
+
+.list3>a{
+    border-bottom-left-radius: 40%;
+}
+
+.list4>a{
+    border-bottom-right-radius: 40%;
+}
+.menu li a:hover {
+    background: linear-gradient(rgb(116, 116, 255),rgb(52, 52, 255) );
+    
+}
+.menu li a:focus{
+    background: linear-gradient(rgb(116, 255, 213),rgb(0, 167, 144) );
+    color:rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+
+@media screen and (min-width: 500px) {
+    
+   
+}
+
+@media screen and (min-width: 650px) {
+    
+    .content-wrapper {
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+   
+    nav.icon,
+    nav.footer
+    {
+         display: none;
+    }
+
+    div.superior nav.horizontal {
+       display: block;
+    }
+
+    nav.horizontal ul {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        border: 1px solid #ba89a8;
+        background-color: rgba(200,200,200,0.2);
+    }
+
+    nav a { /* Cualquier a dentro de nav */
+		display: block;
+		padding: 0.3rem 0.5rem;
+		/* margin: 0.25em;
+        border-radius: .5em;
+        border: 1px solid #ba89a8;
+        background-color: rgba(200,200,200,0.5);
+        */
+        text-align: center; 
+        font-weight: bold;
+	}
+
+}
+
+@media screen and (min-width: 800px) {
+    
+    .content-wrapper {
+        
+        width: 100%;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    section {
+        width: 50%;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+
+    nav.menu{
+        display:block;
+    }
+
+
+    /* nav.horizontal>ul>li:not(:last-of-type)::after {
+        content: "|";
+    } */
+    
+
+}

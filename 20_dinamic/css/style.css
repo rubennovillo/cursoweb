@@ -1,0 +1,41 @@
+body{
+
+}
+
+div{
+    background-color: blue;
+    color: yellow;
+    width: 3rem;
+    height: 3rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition-duration: 2s;
+    transition-timing-function: cubic-bezier(.76,1.26,.66,-1.48);
+    
+}
+
+p.boton:hover+div{
+    color: blue;
+    background-color:yellow;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+}
+div.transform{
+
+}
+
+p.btn-escalar:hover+div{
+    transform: scale(2)
+}
+p.btn-rotar:hover+div{
+    transform: rotate(80deg)
+}
+p.btn-inclinar:hover+div{
+    transform: skew(20deg)
+}
+p.btn-trasladar:hover+div{
+    transform: translate(8rem)
+}
