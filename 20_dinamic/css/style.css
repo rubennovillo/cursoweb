@@ -1,5 +1,6 @@
 body{
-
+margin-left: 400px;
+margin-bottom: 300px;
 }
 
 div{
@@ -31,11 +32,18 @@ p.btn-escalar:hover+div{
     transform: scale(2)
 }
 p.btn-rotar:hover+div{
+    transform-origin:top; 
     transform: rotate(80deg)
 }
 p.btn-inclinar:hover+div{
-    transform: skew(20deg)
+    transform: skew(-20deg)
 }
 p.btn-trasladar:hover+div{
     transform: translate(8rem)
+}
+section.tresD{
+    perspective: 500px;
+}
+p.btn-3D:hover+div{
+    transform: translateZ(-10rem);
 }

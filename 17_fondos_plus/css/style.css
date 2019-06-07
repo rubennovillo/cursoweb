@@ -24,7 +24,7 @@ header::after{
     height:100%;
     width: 100%;
     position: absolute;
-    z-index: 10;
+    z-index: 5;
     top:0;
     left:0;
     opacity: 0.3;
@@ -36,7 +36,7 @@ header::after{
 
 h1{
     color:rgb(170, 52, 107);
-    z-index: 20;
+    z-index: 10;
 }
 
 .content.wrapper{
