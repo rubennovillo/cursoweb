@@ -69,7 +69,9 @@ table {
 
 
 
-
+body{
+    background-color: slategray;
+}
 .main_header{
     background-image: url(../assest/banner.jpg);
     min-height: 60vh;
@@ -129,7 +131,7 @@ display:flex;
 
 
 .main_inicio{
-   
+
 }
 .main_footer{
     background-color: #000;
@@ -139,20 +141,24 @@ display:flex;
     display:flex;
 }
 
-.nav2{
-    display:inline-flex;
-    width: 700px;
-    height: 1000px;
-    border-left: solid 2px;
+div .aside{
+    width:40%;
+   
+   background-image: url(../assest/papiro.jpg);
+
 }
 .artic_inicio{
-    padding: 5%;
+   margin-left:5%;
+   padding: 2rem;
+   width:50%;
     background-color: rgb(255, 245, 213);
 }
 .artic_inicio header{
 font-family: 'aaargh';
 font-size: 2rem;
-margin-bottom: 2rem;
+font-weight: bold;
+margin-top: 4rem;
+margin-bottom: 3rem;
 
 }
 .artic_inicio p{
@@ -160,3 +166,42 @@ margin-bottom: 2rem;
     line-height:1.3rem;
     padding:5px;
 }
+
+@keyframes slidy {
+    0% { left: 0%; }
+    10% { left: 0%; }
+    11% { left: -100%; }
+    20% { left: -100%; }
+    21% { left: -200%; }
+    30% { left: -200%; }
+    31% { left: -300%; }
+    40% { left: -300%; }
+    41% { left: -400%; }
+    50% { left: -400%; }
+    51% { left: -500%; }
+    60% { left: -500%; }
+    61% { left: -600%; }
+    70% { left: -600%; }
+    71% { left: -700%; }
+    80% { left: -700%; }
+    81% { left: -800%; }
+    90% { left: -800%; }
+    91% { left: -900%; }
+    100% { left: -900%; }
+    }
+    
+   .slider{
+       margin-top:1rem;
+       margin-bottom:1rem;
+   }
+    div.slider { overflow: hidden; }
+    div.slider figure img { 
+        width: 10%; 
+        float: left; 
+    }
+    div.slider figure { 
+      position: relative;
+      width: 1000%;
+      animation: 60s slidy infinite; 
+    }
+    
