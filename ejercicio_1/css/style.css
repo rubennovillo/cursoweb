@@ -42,6 +42,11 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+/*******************************
+        
+            FIN RESETCSS
+
+*******************************/
 @font-face{
     font-family: 'antiqua';
     src: url(../assest/fonts/Chantelli_Antiqua.ttf);
@@ -66,14 +71,50 @@ table {
     font-weight: normal;
     font-style: normal;
 }
+/*******************************
+        
+            FIN Fonts
+
+*******************************/
 
 
 
 body{
-    background-color: slategray;
+    background-color: rgb(59, 83, 109);
+    
 }
+/*******************************
+        
+            Headers backs
+
+*******************************/
 .main_header{
     background-image: url(../assest/banner.jpg);
+    min-height: 60vh;
+    background-repeat:no-repeat;
+    background-size:cover;
+    border-bottom:solid 3px;
+    
+}
+.etapas_header{
+    background-image: url(../assest/43-banner-painting-v2.jpg);
+    min-height: 60vh;
+    background-repeat:no-repeat;
+    background-size:cover;
+    border-bottom:solid 3px;
+    
+}
+
+.mitologia_header{
+    background-image: url(../assest/mitologia.jpg);
+    min-height: 60vh;
+    background-repeat:no-repeat;
+    background-size:cover;
+    border-bottom:solid 3px;
+    
+}
+.actual_header{
+    background-image: url(../assest/actual.jpg);
     min-height: 60vh;
     background-repeat:no-repeat;
     background-size:cover;
@@ -86,14 +127,50 @@ font-size: 3rem;
 font-variant: small-caps;
 padding-top: 2rem;
 display:flex;
-
 }
+
+
+.etapas_header h1{
+    font-family:'antiqua';
+    font-size: 3rem;
+    font-variant: small-caps;
+    padding-top: 2rem;
+    display:flex;
+    color:gold;
+    }
+
+    .actual_header h1{
+        font-family:'antiqua';
+    font-size: 3rem;
+    font-variant: small-caps;
+    padding-top: 2rem;
+    display:flex;
+    color:rgb(255, 255, 255); 
+    }
+
 .subti{
     margin-bottom: 2rem;
     text-align: center;
     font-family: 'elmissiri';
     font-size: 1.2rem;
     display:flex;
+}
+
+.etapas_header .subti{
+    margin-bottom: 2rem;
+    text-align: center;
+    font-family: 'elmissiri';
+    font-size: 1.2rem;
+    display:flex;
+    color:gold;
+}
+.actual_header .subti{
+    margin-bottom: 2rem;
+    text-align: center;
+    font-family: 'elmissiri';
+    font-size: 1.2rem;
+    display:flex;
+    color: rgb(255, 255, 255);
 }
 
 
@@ -136,21 +213,40 @@ display:flex;
 .main_footer{
     background-color: #000;
     color: bisque;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
 }
 .screen{
     display:flex;
 }
-
 div .aside{
+    font-family: 'elmissiri';
+    padding:3rem;
     width:40%;
-   
-   background-image: url(../assest/papiro.jpg);
+    display: block;
+    opacity: 0.8;
+    background-image: url(../assest/papiro.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    font-size:1.2rem;
+        
+}
+div .aside h2{ 
+    font-size:2rem;
+    font-family: "antiqua";
+    padding-top: 2rem;
+    padding-bottom:6rem;
+}
+div .aside li{
+    padding:1rem;
 
 }
+
 .artic_inicio{
-   margin-left:5%;
+   margin-left:7%;
    padding: 2rem;
-   width:50%;
+   width:40%;
     background-color: rgb(255, 245, 213);
 }
 .artic_inicio header{
