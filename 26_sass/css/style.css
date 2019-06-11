@@ -1,25 +1,40 @@
 body {
-    margin: 0;
-  }
-  
-  .main-header {
-    background-color: brown;
-    color: bisque;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-  }
-  .main-header h1 {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-  
-  section {
-    margin: 2.6rem;
-  }
-  section header {
-    background-color: bisque;
-    color: brown;
-  }
-  
-  /*# sourceMappingURL=style.css.map */
+  margin: 0rem;
+  grid-template-columns: 2fr auto auto 1fr;
+}
+
+.main, .main-footer, .main-header {
+  background-color: #225c01;
+  color: bisque;
+  display: flex;
+}
+
+.main-header {
+  justify-content: center;
+  text-align: center;
+}
+.main-header h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+main {
+  min-height: 60vh;
+}
+
+section.intro {
+  margin: 2.6rem;
+}
+section.intro header {
+  background-color: bisque;
+  color: brown;
+}
+p {
+  border: 1px solid crimson;
+  padding: 1rem;
+}
+
+.main-footer {
+  justify-content: center;
+  text-align: center;
+}

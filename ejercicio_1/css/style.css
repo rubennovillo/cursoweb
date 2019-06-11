@@ -222,10 +222,10 @@ display:flex;
 }
 div .aside{
     font-family: 'elmissiri';
+    color:rgb(49, 0, 0);
     padding:3rem;
     width:40%;
     display: block;
-    opacity: 0.8;
     background-image: url(../assest/papiro.jpg);
     background-size:cover;
     background-repeat: no-repeat;
