@@ -1,23 +1,8 @@
-:root {
+/* :root {
     --back-body:linear-gradient(rgb(255, 255, 255),rgb(255, 220, 174)) ;
     --color-letra: bisque;
     --color-fondo: rgb(20, 129, 124);
     --color-article:  rgb(181, 225, 255);
     --font-main: 'Source Sans Pro', sans-serif;
     --font-title: 'Stylish', sans-serif;
-}
-.main-header{
-    color: var(--color-letra);
-    background-color: var(--color-fondo);
-    font-family:  var(--font-main);
-    display:flex;
-
-}
-
-.main-footer{
-    min-height: 10vh;
-    font-family: var(--font-main); 
-    background-color: var(--color-fondo);
-    color: var(--color-letra);
-    display:flex;  
-}
+} */

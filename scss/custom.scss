@@ -1,0 +1,24 @@
+
+$theme-colors: (
+ "letra": bisque,
+ "fondo": rgb(20, 129, 124)
+);
+
+$font-family-base:'Stylish', sans-serif;
+
+.main-header{
+    font-family:  var(--font-main);
+    display:flex;
+
+}
+
+.main-footer{
+    font-family: var(--font-main); 
+    display:flex;  
+}
+
+.min-vh-10{
+    min-height: 10vh;
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
