@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../css/custom.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Stylish&display=swap" rel="stylesheet">
     <title>Bootstrap</title>
 </head>
@@ -19,8 +20,17 @@
                 <div class="col-xs">
                     <h1>Uso de Bootstrap</h1>
                 </div>
-
             </div>
+                <div class="row justify-content-center align-items-center">
+                        <nav>
+                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                  <a class="nav-item nav-link text-letra" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Home</a>
+                                  <a class="nav-item nav-link text-letra" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Uso de bootstrap</a>
+                                  <a class="nav-item nav-link text-letra" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Ejemplos</a>
+                                  <a class="nav-item nav-link text-letra" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Componentes</a>
+                                </div>
+                              </nav>
+                </div>
         </div>
 
     </header>
@@ -28,60 +38,158 @@
         <main class="row ">
             <section class="col-xs-12 col-lg-8 order-lg-1 mt-4 mb-4">
                 <h2>Uso de Bootstrap</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis est veniam nesciunt nihil ab
-                    dicta,
-                    molestias quas impedit harum nam dignissimos? Quaerat nam excepturi sint similique ratione itaque,
-                    eum
-                    eos.</p>
-                <p>Perferendis praesentium, soluta repellendus magnam, aliquid distinctio architecto quis, rem accusamus
-                    ad
-                    animi consequatur. Delectus, quae? Mollitia voluptatibus aspernatur error nam. Ab unde provident,
-                    laborum ea repudiandae cumque similique ut.</p>
-                <p>Rem sequi maxime a. Accusantium repellendus nemo mollitia deleniti? Molestiae velit nihil odit at
-                    debitis
-                    odio vitae. Optio suscipit ipsam voluptatem numquam consectetur illo atque perferendis, temporibus
-                    est
-                    debitis expedita!</p>
-                <img class="img-fluid rounded" src="https://via.placeholder.com/500x350.png" alt="Placeholder">
+                <div class="row">
+                    <div class="col-xl">
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis est veniam nesciunt
+                            nihil
+                            ab
+                            dicta,
+                            molestias quas impedit harum nam dignissimos? Quaerat nam excepturi sint similique ratione
+                            itaque,
+                            eum
+                            eos.
+                        </p>
+                        <p>
+                            Perferendis praesentium, soluta repellendus magnam, aliquid distinctio architecto quis, rem
+                            accusamus
+                            ad
+                            animi consequatur. Delectus, quae? Mollitia voluptatibus aspernatur error nam. Ab unde
+                            provident,
+                            laborum ea repudiandae cumque similique ut.
+                        </p>
+                    </div>
+                    <div class="col-xl">
+                        <p>
+                            Rem sequi maxime a. Accusantium repellendus nemo mollitia deleniti? Molestiae velit nihil
+                            odit
+                            at
+                            debitis
+                            odio vitae. Optio suscipit ipsam voluptatem numquam consectetur illo atque perferendis,
+                            temporibus
+                            est
+                            debitis expedita!
+                        </p>
+                    </div>
+
+
+                </div>
+                    <img class="img-fluid rounded-pill"
+                    src="http://mtv-intl.mtvnimages.com/uri/mgid:arc:content:mtv.es:cbd01bab-6ad3-48ac-9edd-0bc92b050f77?ep=mtv.es&stage=live&format=jpg&quality=0.8" alt="Rosalia">
             </section>
+              
             <section class="col-xs-12 col-lg order-lg-3">
                 <h2>Ejemplos de bootstrap</h2>
-                
-                <table  class="table table-success">
-                        <tr>
-                            <th rowspan="2" colspan="2">Preferencias de viajes</th>
-                            <th colspan="3">Destinos</th>
-                            
-                        </tr>
-                        <tr>
-                            <th scope="col">Caribe</th>
-                            <th scope="col">Europa</th>
-                            <th scope="col">Oriente</td>
-                            
-                        </tr>
-                        <tr>
-                            <th rowspan="3" scope="rowgroup">Rangos de edad</th>
-                            <th scope="row">menores de 18</th>
-                            <td>38%</td>
-                            <td>25%</td>
-                            <td>37%</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Entre 18 y 30</th>
-                            <td>32%</td>
-                            <td>37%</td>
-                            <td>31%</td>
-                            
-                        </tr>
-                        <tr>
-                            <th scope="row">Mas de 30</th>
-                            <td>30%</td>
-                            <td>38%</td>
-                            <td>32%</td>
-                            
-                        </tr>
-                    </table>
+
+                <table class="table table-success">
+                    <tr>
+                        <th rowspan="2" colspan="2">Preferencias de viajes</th>
+                        <th colspan="3">Destinos</th>
+
+                    </tr>
+                    <tr>
+                        <th scope="col">Caribe</th>
+                        <th scope="col">Europa</th>
+                        <th scope="col">Oriente</td>
+
+                    </tr>
+                    <tr>
+                        <th rowspan="3" scope="rowgroup">Rangos de edad</th>
+                        <th scope="row">menores de 18</th>
+                        <td>38%</td>
+                        <td>25%</td>
+                        <td>37%</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Entre 18 y 30</th>
+                        <td>32%</td>
+                        <td>37%</td>
+                        <td>31%</td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">Mas de 30</th>
+                        <td>30%</td>
+                        <td>38%</td>
+                        <td>32%</td>
+
+                    </tr>
+                </table>
             </section>
+            <section class="col-xs-12 col-lg-8 order-lg-4 mt-4 mb-4">
+                <h2 class="display-4">Componentes</h2>
+
+                <div class="jumbotron">
+                    <h1 class="display-4">Jumbotron<i class="fab fa-bootstrap"></i></h1>
+                    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra
+                        attention to featured content or information.</p>
+                    <hr class="my-4">
+                    <p>It uses utility classes for typography and spacing to space content out within the larger
+                        container.</p>
+                    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                </div>
+
+            </section>
+            <section class="card-img col-xs-12 col-lg-12 order-lg-5 mt-4 mb-4">
+                <div class="card" style="width: 18rem;">
+                    <img  src="https://http2.mlstatic.com/yu-gi-oh-carta-silver-fang-D_NQ_NP_241211-MLM20480987801_112015-F.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">El lobo</h5>
+                        <p class="card-text">Un lobo que te muerde y te quita tela de vidas, y tal.</p>
+                        <a href="#" class="btn btn-primary">Jugar</a>
+                    </div>
+                </div>
+            </section>
+            <section class="card-img col-xs-12 col-lg-12 order-lg-5 mt-4 mb-4">
+                <div class="spinner-grow text-primary" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <div class="spinner-grow text-secondary" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <div class="spinner-grow text-success" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <div class="spinner-grow text-danger" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <div class="spinner-grow text-warning" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <div class="spinner-grow text-info" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <div class="spinner-grow text-light" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <div class="spinner-grow text-dark" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+
+
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-primary">A simple primary
+                        list group item</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">A simple
+                        secondary list group item</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-success">A simple success
+                        list group item</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-danger">A simple danger
+                        list group item</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-warning">A simple warning
+                        list group item</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-info">A simple info list
+                        group item</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-light">A simple light list
+                        group item</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-dark">A simple dark list
+                        group item</a>
+                </div>
+            </section>
+            </section>
+
             <aside class="col-xs-12 col-lg-4 order-lg-2 mt-4 mb-4">
                 <h2>Otros frameworks CSS</h2>
                 <ul>
