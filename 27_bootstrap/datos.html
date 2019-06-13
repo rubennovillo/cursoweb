@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/custom.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Stylish&display=swap" rel="stylesheet">
+    <title>Datos-bootstrap</title>
+</head>
+<body class="body_datos text-light">
+        <header class="main-header text-letra bg-fondo pt-4 pb-4">
+                <div class="container">
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-xs">
+                            <h1>Uso de Bootstrap</h1>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center align-items-center">
+                            <ul class="nav justify-content-center">
+                                    <li class="nav-item">
+                                      <a class="nav-link active text-letra" href="./index.html">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="nav-link text-letra" href="./datos.html">Datos</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="nav-link text-letra" href="#">Link</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="nav-link text-letra" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                                    </li>
+                                  </ul>
+                    </div>
+                    </div>
+            </header>
+            <div class="container container_datos">
+                <main class=" max-vh-100 datos row justify-content-center">
+                    <section class="col-xs-12">
+                        <h2 class="mt-4 mb-5">Formuario</h2>
+                        <form>
+                          <fieldset class="form-group">
+                                <div class="form-row">
+                                  <div class="col-xl">
+                                    <input type="text" class="form-control" placeholder="Escriba su nombre">
+                                  </div>
+                                  <div class="col-xl">
+                                    <input type="text" class="form-control" placeholder="Escriba su apellido">
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                        <label for="email">Correo Electrónico</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Correo electrónico">
+                                        <small id="emailHelp" class="form-text text-texto">Debe contener un correo válido</small>
+                                      </div>
+                                      <div class="form-group">
+                                        <label for="Password">Contraseña</label>
+                                        <input type="contraseña" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                      </div>
+                                      <div class="form-group form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label" for="exampleCheck1">Acepto los terminos y condiciones</label>
+                                      </div>
+                                      <div class="form-group">
+                                          <label for="select">¿A que concierto quieres ir?</label>
+                                          <select multiple class="form-control" name="select" id="select">
+                                            <option>2 de Julio, Madrid</option>
+                                            <option>4 de Julio, Barcelona</option>
+                                            <option>5 de julio, valencia</option>
+                                            <option>7 de julio, Sevilla</option>
+                                            <option>8 de julio, Madrid</option>
+                                            <option>10 de julio, Barcelona</option>
+                                            <option>5 de julio, Sanse</option>
+
+                                          </select>
+                                        <button type="submit" class="btn btn-fondo mb-4">Confirmar</button>
+                                      </div>
+                            </form>
+                          </fieldset>
+                    </section>
+                </main>
+            </div>
+            <footer class="min-vh-10 d-flex align-items-center text-letra bg-fondo">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-xs">
+                                <address class="mb-0">LA ROSALIA</address>
+                            </div>
+            
+                        </div>
+                    </div>
+            
+                </footer>
+
+
+    <script src="../node_modules/"></script>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
