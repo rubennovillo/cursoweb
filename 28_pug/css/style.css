@@ -1,0 +1,48 @@
+.main-header{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color:rgb(255, 240, 152);
+    background-color: indigo;
+}
+
+.main-footer{
+    margin-top: 2rem;
+    color:rgb(255, 240, 152);
+    background-color: rgb(0, 0, 0);
+}
+
+.flex{
+    display: flex;
+    background-color: indigo;
+    margin:0;
+
+}
+
+figure{
+    margin:0;
+    margin-right:2rem;
+}
+
+nav ul{
+    margin:0;
+    padding:0;
+    list-style: none;
+    display: flex;
+}
+
+nav a{
+    text-decoration: none;
+    display: block;
+    padding: 1rem;
+
+}
+.main-menu a{
+     color:yellow;
+}
+p{
+    color:white;
+}
+
+.parrafo{
+    padding:2rem;
+}
