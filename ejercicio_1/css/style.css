@@ -172,6 +172,11 @@ display:flex;
     display:flex;
     color: rgb(255, 255, 255);
 }
+/*******************************
+        
+            Nav común
+
+*******************************/
 
 
 .main_nav li a {
@@ -205,11 +210,11 @@ display:flex;
 .main_nav li ul li {
     position:relative;
 }
+/*******************************
+        
+           Footer común
 
-
-.main_inicio{
-
-}
+*******************************/
 .main_footer{
     background-color: #000;
     color: bisque;
@@ -217,8 +222,14 @@ display:flex;
     padding-bottom: 1rem;
     text-align: center;
 }
+/*******************************
+        
+            -<main>-
+
+*******************************/
 .screen{
     display:flex;
+    margin-left:10%;
 }
 div .aside{
     font-family: 'elmissiri';
@@ -244,11 +255,11 @@ div .aside li{
 }
 
 .artic_inicio{
-   margin-left:7%;
    padding: 2rem;
    width:40%;
     background-color: rgb(255, 245, 213);
 }
+
 .artic_inicio header{
 font-family: 'aaargh';
 font-size: 2rem;
@@ -260,7 +271,7 @@ margin-bottom: 3rem;
 .artic_inicio p{
     font-family: 'anticsans';
     line-height:1.3rem;
-    padding:5px;
+    padding: 0.5rem;
 }
 
 @keyframes slidy {
@@ -299,5 +310,11 @@ margin-bottom: 3rem;
       position: relative;
       width: 1000%;
       animation: 60s slidy infinite; 
+    }
+
+    img.imagen{
+        width: 100%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
     }
     
