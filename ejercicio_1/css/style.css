@@ -229,18 +229,28 @@ display:flex;
 *******************************/
 .screen{
     display:flex;
-    margin-left:10%;
+    
+    margin-left:15%;
+    margin-right:5%;
 }
+.screen2{
+    display:flex;
+    margin-left:5%;
+    margin-right:5%;
+}
+
 div .aside{
+
     font-family: 'elmissiri';
     color:rgb(49, 0, 0);
     padding:3rem;
-    width:40%;
+    width:25%;
     display: block;
     background-image: url(../assest/papiro.jpg);
     background-size:cover;
     background-repeat: no-repeat;
     font-size:1.2rem;
+    flex:right;
         
 }
 div .aside h2{ 
@@ -256,7 +266,7 @@ div .aside li{
 
 .artic_inicio{
    padding: 2rem;
-   width:40%;
+   width:50%;
     background-color: rgb(255, 245, 213);
 }
 
@@ -268,11 +278,22 @@ margin-top: 4rem;
 margin-bottom: 3rem;
 
 }
+
+.artic_inicio h3{
+font-family: 'aaargh';
+font-size: 1.2rem;
+font-weight: bold;
+margin-top: 2rem;
+margin-bottom: 1.5rem;
+text-decoration: underline
+}
+
 .artic_inicio p{
     font-family: 'anticsans';
     line-height:1.3rem;
     padding: 0.5rem;
 }
+
 
 @keyframes slidy {
     0% { left: 0%; }
@@ -317,4 +338,32 @@ margin-bottom: 3rem;
         margin-top: 1rem;
         margin-bottom: 1rem;
     }
-    
+
+    .videos{
+        margin-top:1rem;
+        border-top:4px solid brown;
+        border-bottom:4px solid brown; 
+        width:100%;
+    }
+    .main_table{
+        width: 100%;
+        text-align: center;
+        border-bottom: 2px rgb(71, 32, 1) solid;
+        
+
+}
+
+    .main_table tr th{
+        background:rgb(71, 32, 1);
+        color:rgb(255, 230, 162);
+        vertical-align: middle;
+        padding: 1rem;
+}
+
+    .main_table tr td{
+        background:rgb(255, 230, 162);
+        color:rgb(71, 32, 1);
+        padding: 1rem;
+        border: solid, 1px, white;
+        vertical-align: middle;
+}
