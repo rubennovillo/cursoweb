@@ -230,7 +230,7 @@ display:flex;
 .screen{
     display:flex;
     
-    margin-left:15%;
+    margin-left:5%;
     margin-right:5%;
 }
 .screen2{
@@ -240,13 +240,10 @@ display:flex;
 }
 
 div .aside{
-
     font-family: 'elmissiri';
-    color:rgb(49, 0, 0);
     padding:3rem;
     width:25%;
     display: block;
-    background-image: url(../assest/papiro.jpg);
     background-size:cover;
     background-repeat: no-repeat;
     font-size:1.2rem;
@@ -263,11 +260,19 @@ div .aside li{
     padding:1rem;
 
 }
+section#aside1{
+    color:bisque;
+}
+section#aside2{
+    background-image: url(../assest/papiro.jpg);
+    color:rgb(49, 0, 0);
+}
+
 
 .artic_inicio{
    padding: 2rem;
-   width:50%;
-    background-color: rgb(255, 245, 213);
+   width:60%;
+   background-color: rgb(255, 245, 213);
 }
 
 .artic_inicio header{
@@ -292,6 +297,9 @@ text-decoration: underline
     font-family: 'anticsans';
     line-height:1.3rem;
     padding: 0.5rem;
+}
+.artic_inicio .main_table{
+    text-align: center;
 }
 
 
@@ -346,7 +354,8 @@ text-decoration: underline
         width:100%;
     }
     .main_table{
-        width: 100%;
+        width: 60%;
+        margin: 0 auto;
         text-align: center;
         border-bottom: 2px rgb(71, 32, 1) solid;
         
