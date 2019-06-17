@@ -260,10 +260,8 @@ div .aside li{
     padding:1rem;
 
 }
-section#aside1{
-    color:bisque;
-}
-section#aside2{
+
+section.aside2{
     background-image: url(../assest/papiro.jpg);
     color:rgb(49, 0, 0);
 }
@@ -376,3 +374,96 @@ text-decoration: underline
         border: solid, 1px, white;
         vertical-align: middle;
 }
+
+.grid{
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+	grid-template-columns: repeat(4);
+    grid-template-rows: repeat(19);
+}
+
+.grid-item{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    text-align: center;
+    border-top:white double 4px;
+    border-bottom:white double 4px;
+    color:rgb(7, 0, 112);
+    border-radius:20px;
+    
+}
+.grid-item2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color:rgb(255, 248, 209);
+    border-right:4px rgb(255, 255, 255) double;
+    grid-column: 2;
+    max-width: 200px;
+    
+}
+.wrapper{
+	display:flex;
+	min-height: 100%;
+}
+
+.item1 {
+    grid-column:  1/span 4;
+    background-image: url(../assest/narmer.jpg);
+    background-position: initial;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 300px;
+    
+
+}
+.item2 {
+    
+
+}
+
+.item3 {
+    grid-column:  1/span 4;
+    background-image: url(../assest/slide1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 300px;
+}
+
+.item5 {
+    grid-column:  1/span 4;
+    background-image: url(../assest/slide2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 300px;
+}
+
+
+.item7 {
+    grid-column:  1/span 4
+}
+
+.item9 {
+    grid-column:  1/span 4
+}
+
+.item11 {
+    grid-column:  1/span 4
+}
+
+.item13 {
+    grid-column:  1/span 4
+}
+.item15 {
+    grid-column:  1/span 4
+}
+
+
+
+
+
