@@ -420,10 +420,6 @@ text-decoration: underline
     
 
 }
-.item2 {
-    
-
-}
 
 .item3 {
     grid-column:  1/span 4;
@@ -461,6 +457,34 @@ text-decoration: underline
 }
 .item15 {
     grid-column:  1/span 4
+}
+
+/*******************************************
+                
+                Grid Mitologia
+
+    **************************************/
+.content{
+    display:flex;
+	min-height: 100%;
+}
+
+.content.grid{
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+	grid-template-columns: repeat(12);
+    grid-template-rows: repeat(20);
+    
+}
+
+.content .grid-item{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    text-align: center;
+    border: double 1px rgb(238, 255, 0);
+   
 }
 
 
