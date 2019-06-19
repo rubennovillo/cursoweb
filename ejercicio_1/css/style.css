@@ -88,16 +88,7 @@ body{
             Headers backs
 
 *******************************/
-.main_header{
-    background-image: url(../assest/banner.jpg);
-    min-height: 60vh;
-    background-repeat:no-repeat;
-    background-size:cover;
-    border-bottom:solid 3px;
-    
-}
-.etapas_header{
-    background-image: url(../assest/43-banner-painting-v2.jpg);
+.header{
     min-height: 60vh;
     background-repeat:no-repeat;
     background-size:cover;
@@ -105,21 +96,22 @@ body{
     
 }
 
-.mitologia_header{
-    background-image: url(../assest/mitologia.jpg);
-    min-height: 60vh;
-    background-repeat:no-repeat;
-    background-size:cover;
-    border-bottom:solid 3px;
+.main_header{
+    background-image: url(../assest/tutan.jpg);
     
 }
-.actual_header{
-    background-image: url(../assest/actual.jpg);
-    min-height: 60vh;
-    background-repeat:no-repeat;
-    background-size:cover;
-    border-bottom:solid 3px;
+.etapas_header{
+    background-image: url(../assest/esfinge.jpg);
     
+}
+
+.mitologia_header{
+    background-image: url(../assest/mit.jpg);
+   
+}
+.actual_header{
+    background-image: url(../assest/ElCairo_11.jpg);
+      
 }
 h1{
 font-family:'antiqua';
@@ -140,7 +132,7 @@ display:flex;
     }
 
     .actual_header h1{
-        font-family:'antiqua';
+    font-family:'antiqua';
     font-size: 3rem;
     font-variant: small-caps;
     padding-top: 2rem;
@@ -180,17 +172,16 @@ display:flex;
 
 
 .main_nav li a {
-    font-family:'antiqua';
-    background-color:#000;
-    color:#fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color:black;
     text-decoration:none;
     padding:10px 17px;
-	display:block;   
+    display:block;
+   
+      
 }
-.main_nav >ul > li {
-    float:left;
 
-}
 
 .main_nav li a:hover {
     background-color:#434343;
@@ -203,9 +194,7 @@ display:flex;
     
 }
 
-.main_nav li:hover > ul {
-    display:block;
-}
+
 
 .main_nav li ul li {
     position:relative;
@@ -227,31 +216,23 @@ display:flex;
             -<main>-
 
 *******************************/
-.screen{
-    display:flex;
-    
-    margin-left:5%;
-    margin-right:5%;
-}
-.screen2{
-    display:flex;
-    margin-left:5%;
-    margin-right:5%;
-}
+
 
 div .aside{
     font-family: 'elmissiri';
-    padding:3rem;
-    width:25%;
+    padding:1rem;
     display: block;
     background-size:cover;
     background-repeat: no-repeat;
-    font-size:1.2rem;
+    font-size:1rem;
     flex:right;
+    margin-right: auto;
+    margin-left: auto
+
         
 }
 div .aside h2{ 
-    font-size:2rem;
+    font-size:1.5rem;
     font-family: "antiqua";
     padding-top: 2rem;
     padding-bottom:6rem;
@@ -259,6 +240,9 @@ div .aside h2{
 div .aside li{
     padding:1rem;
 
+}
+section.aside1{
+    display:none;
 }
 
 section.aside2{
@@ -268,9 +252,10 @@ section.aside2{
 
 
 .artic_inicio{
-   padding: 2rem;
-   width:60%;
+   padding: 0.5rem;
    background-color: rgb(255, 245, 213);
+   margin-right: auto;
+   margin-left: auto
 }
 
 .artic_inicio header{
@@ -323,6 +308,18 @@ text-decoration: underline
     91% { left: -900%; }
     100% { left: -900%; }
     }
+    figcaption a,
+    figcaption{
+        display:inline;
+        text-decoration:none;
+        font-family: 'antiqua';
+        font-size: 0.6rem;
+        background-color: #434343;
+        color:pink;
+        font-variant: small-caps;
+        
+    }
+    
     
    .slider{
        margin-top:1rem;
@@ -344,6 +341,12 @@ text-decoration: underline
         margin-top: 1rem;
         margin-bottom: 1rem;
     }
+    img.img_anuncio{
+        display:block;
+        width: 40%;
+          
+    }
+    
 
     .videos{
         margin-top:1rem;
@@ -352,7 +355,7 @@ text-decoration: underline
         width:100%;
     }
     .main_table{
-        width: 60%;
+        width: 100%;
         margin: 0 auto;
         text-align: center;
         border-bottom: 2px rgb(71, 32, 1) solid;
@@ -364,18 +367,20 @@ text-decoration: underline
         background:rgb(71, 32, 1);
         color:rgb(255, 230, 162);
         vertical-align: middle;
-        padding: 1rem;
+        padding: 1rem 0;
+        font-size: 0.5rem;
 }
 
     .main_table tr td{
         background:rgb(255, 230, 162);
         color:rgb(71, 32, 1);
-        padding: 1rem;
+        font-size: 0.5rem;
+        padding: 1rem 0.5rem;
         border: solid, 1px, white;
         vertical-align: middle;
 }
 
-.grid{
+.wrapper .grid{
     width: 100%;
     margin: 0 auto;
     display: grid;
@@ -383,7 +388,7 @@ text-decoration: underline
     grid-template-rows: repeat(19);
 }
 
-.grid-item{
+.wrapper .grid-item{
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -394,7 +399,7 @@ text-decoration: underline
     border-radius:20px;
     
 }
-.grid-item2{
+.wrapper .grid-item2{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -410,7 +415,7 @@ text-decoration: underline
 	min-height: 100%;
 }
 
-.item1 {
+.wrapper .item1 {
     grid-column:  1/span 4;
     background-image: url(../assest/narmer.jpg);
     background-position: initial;
@@ -421,7 +426,7 @@ text-decoration: underline
 
 }
 
-.item3 {
+.wrapper .item3 {
     grid-column:  1/span 4;
     background-image: url(../assest/slide1.jpg);
     background-position: center;
@@ -430,7 +435,7 @@ text-decoration: underline
     max-width: 300px;
 }
 
-.item5 {
+.wrapper .item5 {
     grid-column:  1/span 4;
     background-image: url(../assest/slide2.jpg);
     background-position: center;
@@ -440,54 +445,110 @@ text-decoration: underline
 }
 
 
-.item7 {
+.wrapper .item7 {
     grid-column:  1/span 4
 }
 
-.item9 {
+.wrapper .item9 {
     grid-column:  1/span 4
 }
 
-.item11 {
+.wrapper .item11 {
     grid-column:  1/span 4
 }
 
-.item13 {
+.wrapper .item13 {
     grid-column:  1/span 4
 }
-.item15 {
+.wrapper .item15 {
     grid-column:  1/span 4
 }
 
 /*******************************************
                 
-                Grid Mitologia
+                MediaQuery
 
     **************************************/
-.content{
-    display:flex;
-	min-height: 100%;
+   
+       
+    @media (min-width: 1200px) {
+        .screen{
+            display:flex;
+            margin-left:5%;
+            margin-right:5%;
+            
+        }
+        .screen2{
+            display:flex;
+            margin-left:5%;
+            margin-right:5%;
+            
+        }
+        .artic_inicio{
+            width:60%; 
+            padding: 2rem;
+    }
+    div .aside{
+        width:25%;
+    }
+    section.aside1{
+        display:initial;
+    }
+    .main_table{
+        width: 60%;
+        margin: 0 auto;
+        text-align: center;
+        border-bottom: 2px rgb(71, 32, 1) solid;
+        
+
 }
 
-.content.grid{
-    width: 100%;
-    margin: 0 auto;
-    display: grid;
-	grid-template-columns: repeat(12);
-    grid-template-rows: repeat(20);
+    .main_table tr th{
+        background:rgb(71, 32, 1);
+        color:rgb(255, 230, 162);
+        font-size: 1rem;
+        vertical-align: middle;
+        padding: 1rem;
+}
+
+    .main_table tr td{
+        background:rgb(255, 230, 162);
+        color:rgb(71, 32, 1);
+        font-size: 1rem;
+        padding: 1rem;
+        border: solid, 1px, white;
+        vertical-align: middle;
+}
+    .main_nav li:hover > ul {
+    display:block;
+}  
+    .main_nav >ul > li {
+    float:left;
+
+} 
+    .main_nav li a {
+    background-color:#000;
+    color:#fff;
+    font-family:'antiqua';
+}
+.main_header{
+    background-image: url(../assest/banner.jpg);
+    
+}
+.etapas_header{
+    background-image: url(../assest/43-banner-painting-v2.jpg);
     
 }
 
-.content .grid-item{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-    text-align: center;
-    border: double 1px rgb(238, 255, 0);
+.mitologia_header{
+    background-image: url(../assest/mitologia.jpg);
    
 }
+.actual_header{
+    background-image: url(../assest/actual.jpg);
+      
+}
+}
 
-
-
-
-
+   
+    
