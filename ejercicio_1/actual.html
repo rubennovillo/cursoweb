@@ -25,10 +25,10 @@
                 <li><a href="./index.html">Inicio</a></li>
                 <li><a href="./etapas.html">Etapas</a>
                     <ul>
-                            <li><a href="./etapas.html#antiguo">Imperio Antiguo</a> </li>
-                            <li><a href="./etapas.html#medio">Imperio Medio</a></li>
-                            <li><a href="./etapas.html#nuevo">Imperio Nuevo</a></li>
-                            <li><a href="./etapas.html#tardia">Época Tardía</a></li>
+                        <li><a href="./etapas.html#antiguo">Imperio Antiguo</a> </li>
+                        <li><a href="./etapas.html#medio">Imperio Medio</a></li>
+                        <li><a href="./etapas.html#nuevo">Imperio Nuevo</a></li>
+                        <li><a href="./etapas.html#tardia">Época Tardía</a></li>
                     </ul>
                 </li>
 
@@ -39,9 +39,42 @@
         </nav>
     </header>
     <main id="etapas" class="main_inicio">
-
+        <h2>Registrate y comenta</h2>
+        <p>Formulario</p>
+        <form  class="contact_form" action="#" id="contact_form" runat="server">
+            <div>
+                <ul>
+                    <li>
+                        <h2>Contactos</h2>
+                        <span class="required_notification">* Datos requeridos</span>
+                    </li>
+                    <li>
+                        <label for="name">Nombre:</label>
+                        <input type="text" placeholder="Pepito Perez" required />
+                    </li>
+                    <li>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" placeholder="info@developerji.com" required />
+                        <span class="form_hint">Formato correcto: "name@something.com"</span>
+                    </li>
+                    <li>
+                        <label for="website">Sitio web:</label>
+                        <input type="url" name="website" placeholder="http://developerji.com" required pattern="(http|https)://.+" />
+                        <span class="form_hint">Formato correcto: "http://developerji.com"</span>
+                    </li>
+                    <li>
+                        <label for="message">Mensaje:</label>
+                        <textarea name="message" cols="40" rows="6" required></textarea>
+                    </li>
+                    <li>
+                        <button class="submit" type="submit">Enviar</button>
+                    </li>
+                </ul>
+            </div>
+        </form>
 
     </main>
 
-    </body>
-    </html>
+</body>
+
+</html>
