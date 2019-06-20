@@ -38,15 +38,15 @@
 
         </nav>
     </header>
-    <main id="etapas" class="main_inicio">
-        <h2>Registrate y comenta</h2>
+    <main id="actual" class="main_inicio">
+        <div class="formulario">
+        <h2 class="cab-form">Apúntate y comenta</h2>
         <p>Formulario</p>
         <form  class="contact_form" action="#" id="contact_form" runat="server">
             <div>
                 <ul>
                     <li>
-                        <h2>Contactos</h2>
-                        <span class="required_notification">* Datos requeridos</span>
+                        <h2>Contacto</h2>
                     </li>
                     <li>
                         <label for="name">Nombre:</label>
@@ -54,16 +54,16 @@
                     </li>
                     <li>
                         <label for="email">Email:</label>
-                        <input type="email" name="email" placeholder="info@developerji.com" required />
-                        <span class="form_hint">Formato correcto: "name@something.com"</span>
+                        <input type="email" name="email" placeholder="Pepito@ejemplo.com" required />
+                       
                     </li>
                     <li>
                         <label for="website">Sitio web:</label>
-                        <input type="url" name="website" placeholder="http://developerji.com" required pattern="(http|https)://.+" />
-                        <span class="form_hint">Formato correcto: "http://developerji.com"</span>
+                        <input type="url" name="website" placeholder="http://www.developerji.com" required pattern="(http|https)://.+" />
+                        
                     </li>
                     <li>
-                        <label for="message">Mensaje:</label>
+                        <label for="message">Comentario:</label>
                         <textarea name="message" cols="40" rows="6" required></textarea>
                     </li>
                     <li>
@@ -72,6 +72,7 @@
                 </ul>
             </div>
         </form>
+    </div>
 
     </main>
 
