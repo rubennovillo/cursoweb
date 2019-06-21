@@ -1,0 +1,15 @@
+{
+  "name": "js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "keywords": [],
+  "author": "Rubén Novillo",
+  "license": "ISC",
+  "dev-dependencies": {
+    "jasmine": "^3.4.0"
+  }
+}
