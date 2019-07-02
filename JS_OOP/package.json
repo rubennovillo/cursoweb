@@ -2,7 +2,7 @@
   "name": "JS_OOP",
   "version": "1.0.0",
   "description": "",
-  "main": "01_objetos.js",
+  "main": "index.js",
   "scripts": {
     "test": "jasmine"
   },
