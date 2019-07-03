@@ -1,23 +1,26 @@
 /**función isPalindromo
- * @descripción averiguar la frase es palindromo
- * @param {Array}
+ * @description averiguar la frase es palindromo
+ * @param {string} cadena
  * @returns {boolean}
  */
-function isPalindromo(){
-       let palindromo = []
-            for (let i = 0; i < isPalindromo.length; i++) {
-            const item = letras[i];
-            
+isPali = (cadena = '') => {
+     let r = false
+     cadenaSinEspacios = cadena.split(' ').join('').toLowerCase()
+     console.log(cadenaSinEspacios)
+     cadenaInversa = cadenaSinEspacios.split('').reverse().join('')
+     console.log(cadenaInversa)
+     if (cadenaSinEspacios === cadenaInversa) {
+         r = true
+     }
+     return r
  }
-
- function palindromoRev (){
-      let x = palindromo.reverse
-      if (palindromo() === x()) {
-                  return [true]
-            }
-      }
-      return false 
-
+ 
+ isPaliShort = (cadena = '') => {
+     sinEspacios = cadena.split(' ').join('').toLowerCase()
+     return sinEspacios === 
+         sinEspacios.split('').reverse().join('') ? true : false 
  }
-
- console.log(palindromoRev(s,o,m,o,s,o,n,o,s,o,m,o,s))
+ 
+ module.exports = {}
+ module.exports.isPali = isPali
+ module.exports.isPaliShort = isPaliShort
