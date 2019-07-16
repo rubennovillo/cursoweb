@@ -1,0 +1,23 @@
+body{
+      background-color: bisque;
+      font-family: 'Times New Roman', Times, serif;
+      margin: 0
+      
+}
+
+header{
+      margin: 5rem
+}
+main{
+      margin: 3rem 
+}
+main p {
+      margin: 2rem
+}
+
+footer {
+      background-color:black;
+      color: bisque;
+      font-size: 2rem;
+      text-align: center
+}
