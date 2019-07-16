@@ -11,11 +11,15 @@ console.log('a'.charCodeAt())
  */
 
  function enigma ( cadena = '' ) {
-      for (let i = 0; i <Array (cadena.length); i++) {
-            const dato = cadena[i];
-      dato = dato + 33
+      for (let i = 0; i <Array(cadena.length); i++) {
+            const letra = cadena[i];
+      letra = letra + 33
       return i      
       }
+
+ }
+ function encriptar (letra){
+      
 
  }
 
