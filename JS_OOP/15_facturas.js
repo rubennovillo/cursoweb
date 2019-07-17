@@ -99,7 +99,7 @@ factura.listarItems = function() {
             let cant = item.cantidad
             items += 
 `
-    ${desc}     ${pv}          ${cant}
+    ${desc}     ${pv}       0 ${cant}
 `
     })
     return items
