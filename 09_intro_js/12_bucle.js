@@ -1,21 +1,27 @@
-let limite = 30
+let limite = 10
 
+let suma = 0
 for (let i = 0; i < limite; i++) {
-    console.log(i, i*i)   
+   let cuad = i*i
+    console.log(i, cuad )
+    suma = suma + cuad
 }
 
-const aDatos= [
-    'perro',
-    'gato',
-    'caballo',
-    'ornitorinco'
+console.log(suma)
+
+
+const aDatos = [
+    'Perro',
+    'Gato',
+    'Caballo',
+    'Ornitorrinco'
 ]
 
 for (let i = 0; i < aDatos.length; i++) {
-    const item = aDatos[i];
+    let item = aDatos[i];
     if (i > 0) {
-        item = item +'s'
+        item = item + 's'
     }
-    console.log(`tengo ${i+1} ${item}`)
+    console.log(`Tengo ${i+1} ${item}`)
     
 }
