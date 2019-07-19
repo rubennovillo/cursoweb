@@ -1,7 +1,7 @@
 /** Función sumar
  * @description recibe dos parámetros y devuelve la suma de ambos
- * @param {number}
- * @param {number}
+ * @param {number} a
+ * @param {number} b
  * @returns {number}
  * 
  */

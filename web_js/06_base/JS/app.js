@@ -27,6 +27,7 @@ export function app () {
       function onCancel () {
             clearTimeout(handler)
             out.innerHTML = message
+            
       }
       }
 
