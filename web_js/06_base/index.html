@@ -1,25 +1,41 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <title>Curso JS</title>
-      <link rel="stylesheet" href="./css/style.css">
-      <script src="./JS/bootstrap.js" type="module"></script>
-      
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS en la Web</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./favicon.ico">
+    <script src="./js/bootstrap.js" type="module"></script>
 </head>
 <body>
-      <header>
-            <h1>JavaScript en la Web</h1>
-      </header>
-      <main>
-            <button id = "btn-salir">Google</button>
-            <div id = "output"></div>
-      </main>
-      <footer>
-            <address>Ruben Novillo Díaz</address>
-      </footer>
-      
+    <header>
+        <h1>JS en la Web</h1>
+    </header>
+    <main>
+        <button id="btn-salir">Google</button>
+        <dialog id='dlg-cancelar'>
+            <div>
+                <p>Nos vamos a Google</p>
+                <output id="dlg-time"></output>
+                <div>
+                    <button id='btn-cancelar'>Cancelar</button>   
+                </div>          
+            </div>
+        </dialog>
+        <section class="cronos">
+            <div>
+                <output>0</output>
+                <button id="btn-toggle">Play</button>
+                <button id="btn-reset">Reset</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <address>
+            Rubén Novillo
+        </address>
+    </footer>
 </body>
 </html>
