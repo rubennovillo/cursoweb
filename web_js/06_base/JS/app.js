@@ -7,13 +7,18 @@ export function app() {
     let dlgCancelar = document.querySelector('#dlg-cancelar')
     let btnCancelar = document.querySelector('#btn-cancelar')
     let dlgTime = document.querySelector("#dlg-time")
+    let wrapperCronos = document.querySelector(".wrapper-cronos")
     let handlerSalir
     let handlerInterval
 
     btnSalir.addEventListener('click', onClick)
     btnCancelar.addEventListener('click', onCancel)
 
-    new Crono()
+    let aCronos = [1, 2, 3, 4]
+    aCronos.forEach( idCrono => { 
+        new Crono(idCrono, wrapperCronos)
+    })
+    wrapperCronos.innerHTML += `<p>Creados los cronómetros</p>`
 
     function onClick() {
         let url = 'https://www.google.com/'

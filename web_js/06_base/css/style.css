@@ -8,6 +8,35 @@ body{
 header{
       margin: 5rem
 }
+section {
+      padding: 2rem;
+  }
+  
+  
+  dialog {
+      background-color: bisque;
+      color: brown;
+  }
+  
+  dialog div {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+  }
+  
+  .out-wrapper {
+      text-align: center;
+      padding-bottom: 1rem;
+  }
+  
+  .cronos {
+      padding: 1rem 0rem;
+  }
+  .cronos  output {
+      border: 1px solid brown;
+      padding: 0.4rem 2rem;
+  }
+  
 main{
       margin: 3rem 
 }
