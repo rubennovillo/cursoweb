@@ -1,43 +1,41 @@
-import { setCookie } from "./cookie.js"
-export function app () {
-      console.log('Cargada app')
-     
-      aBotones = document.querySelectorAll ("button")
+import { setCookie, getCookie } from "./cookie.js";
 
-      // [iniciar,Vaciar,Mostrar,Recargar]
-      output = document.querySelector ("output")
+export function app() {
+    console.log('Cargada app') 
 
-      aBotones.forEach(btn=> {
-            btn.addEventListerner("click", onClick)
-      });
+    // Nodos
+    let aBotones = document.querySelectorAll('button')
+    let output = document.querySelector('output')
 
-      checkCookie()
+    // Manejadores 
+    aBotones.forEach(btn => {
+        btn.addEventListener('click', onClick)
+    });
 
-      function onClick(ev) {
-            switch (key) {
-                  case iniciar:
-                        setCookie('Visitas', 0, 5)
-                        
-                        break;
-                  case vaciar:
+    let numVisitas  = getCookie('visitas');
+    console.log(numVisitas)
+    if (numVisitas !== '') {
+        setCookie("visitas", ++numVisitas, 5);
+    }
+    
+    // Funciones manejadoras
 
-                  
-                  break;
-                  case mostrar:
-                  
-                  break;
-                  case recargar:
-                        location.reload()
-                  break;
-            }
-      }
-      function checkCookie() {
-            let numvisitas = getcookie('visitas')
-            if (numVisitas !== '') {
-                  setCookie("visitas", ++numVisitas, 5)                  
-            }
-
-      }
-      }
-      
-      
+    function onClick(ev) {
+        switch (ev.target.textContent) {
+            case 'Iniciar': 
+                setCookie('visitas', 0, 5)
+                location.reload()
+                break;
+            case 'Eliminar':
+                setCookie('visitas', 0, -2)
+                location.reload()
+                break;
+            case 'Mostrar':
+                output.value = numVisitas
+                break;
+            case 'Recargar':
+                location.reload()
+                break;
+        }
+    }
+ }
