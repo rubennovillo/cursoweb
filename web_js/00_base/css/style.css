@@ -8,7 +8,7 @@ body{
 header{
       margin: 5rem
 }
-main{
+main{height: 71vh;
       margin: 3rem 
 }
 main p {

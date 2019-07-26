@@ -88,7 +88,4 @@ export function app() {
           ev.target.dataset.id, 1, ev.target.textContent)
       save()
       render()
-     }
-  
-  
-  
+     }}
