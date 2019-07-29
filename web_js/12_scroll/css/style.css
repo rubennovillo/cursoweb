@@ -65,16 +65,19 @@ time, mark, audio, video {
       list-style-type: none;
       display: flex;
       justify-content: space-between;
+      margin-bottom: 0.2rem;
   }
   
   nav li {
       display: block;
-      padding: 0.5rem;
+      padding:0.1rem;
+      
   }
   
   nav a {
       text-decoration: none;
       color: inherit;
+      padding: 0.2rem;
   }
   
   .active {
@@ -82,9 +85,9 @@ time, mark, audio, video {
       color: rgb(3, 151, 144);
   }
 
-  h1{   -webkit-text-stroke: 1.5px white;
-      color: rgb(3, 151, 144);
-        font-size: 5rem;
+  h1{   -webkit-text-stroke: 1px white;
+        color:transparent;
+        font-size: 3.5rem;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
 
@@ -97,7 +100,7 @@ time, mark, audio, video {
   
   main {
       margin: 4rem 6rem;
-      min-height: 200vh;
+      min-height: 250vh;
 
   }
   footer {
