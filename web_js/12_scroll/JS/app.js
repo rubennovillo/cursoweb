@@ -1,3 +1,5 @@
+import ARBOLES from './imagenes.json.js'
+
 export function app() {
       console.log('Cargada app') 
   
@@ -14,6 +16,10 @@ export function app() {
       aEnlaces.forEach((enlace, i) => enlace.addEventListener(
           'click', (ev) => {onClickMenu(ev, i) }
       ))
+
+      /*let aImgWrappers = document.querySelectorAll('.img-wrapper')
+      aImgWrappers.forEach(item, i) =>
+      item.appendChild(aImagenes[i])*/
   
       function calcularOffset () {
           aOffsets = []
