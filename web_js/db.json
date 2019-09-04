@@ -1,0 +1,36 @@
+{
+  "users": [
+    {
+      "nombre": "Evelin",
+      "edad": "29",
+      "id": 1
+    },
+    {
+      "nombre": "ruben",
+      "edad": "29",
+      "id": 2
+    },
+    {
+      "nombre": "Marcos",
+      "edad": "9283749283",
+      "id": 3
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

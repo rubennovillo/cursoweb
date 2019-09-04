@@ -10,7 +10,7 @@ export function app() {
  
     // Asociación de manejadores de eventos
     //btnGuardar.onclick = onClickGuardar
-    btnBuscar.addEventListener('click', onClickBuscar)
+    btnBuscar.addEventListener('click', onClickBuscar2017)
     btnBorrar.addEventListener('click', onClickBorrar)
 
     // Funciones manejadoras de eventos
@@ -21,50 +21,37 @@ export function app() {
 
     function onClickBuscar(ev) {
         let url = usersURL + '/' + inId.value 
-        
-        fetch(url).then (response => {
-            console.log(response)
-            return response.json()
+        fetch(url)
+        .then(response => {
+            if(response.status == 200) {
+                return response.json()
+            } 
+            throw(new Error(response.status))
         })
-        
-        // .then( () => {
-        //     let data = JSON.parse(respnse)
-        //     spanSaludo.innerHTML = data.username
-        // })
-        // .catch( () => {
-        //    spanSaludo.inneHTML = ', datos no encontrados' 
-        // })
-        
-        // ajax('GET', url, leerDatos )
-    // }
+        .then( (data) => {
+            spanSaludo.innerHTML =  data.username
+        })
+        .catch( (error) => {
+            spanSaludo.innerHTML =
+             ', error de conexión: ' + error
+        }) 
+    }
 
+    // ES2017
 
-    function leerDatos(http) {
-        
-            
-        /*spanSaludo.innerHTML =  data.username
-        } else if (http.readyState == 4) {
-            spanSaludo.innerHTML = ', datos no encontrados'
-            //location.assign('./error.html')
-        } */
-
-        if (http.readyState == 4) {
-            if (http.status == 200) {
-                let data = JSON.parse(http.responseText) 
-                    spanSaludo.innerHTML =  data.username
+    async function onClickBuscar2017(ev) {
+        let url = usersURL + '/' + inId.value 
+        try {
+            let response = await fetch(url)
+            if(response.status == 200) {
+                let data = await response.json()
+                spanSaludo.innerHTML =  data.username
             } else {
-                //spanSaludo.innerHTML = ', datos no encontrados'
-                location.assign('./error.html')
-            }
+                throw(new Error(response.status))
+            }    
+        } catch (error) {
+            spanSaludo.innerHTML =
+             ', error de conexión: ' + error
         }
     }
-
-    function ajax(metodo, url, callback) {
-        const http = new XMLHttpRequest()
-        http.addEventListener('readystatechange', 
-            () => { callback(http) })
-        http.open(metodo, url)
-        http.send() 
-    }
-
 }

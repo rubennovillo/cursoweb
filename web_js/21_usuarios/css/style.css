@@ -1,0 +1,57 @@
+* {
+      box-sizing: border-box;
+  }
+  
+  body {
+      margin: 0;
+  }
+  header {
+      background-color: rgb(42, 165, 128);
+      color: bisque;
+      min-height: 20vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  main {
+      margin: 2rem;
+      min-height: 60vh;
+  }
+  
+  .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .altas {
+      margin: 1rem 0rem;
+      padding: 1rem;
+      font-size: 1.2rem;
+  }
+  .usuarios {
+      margin: 1rem 0rem;
+      padding: 1rem;
+      font-size: 1.2rem;
+      background-color: rgb(196, 255, 235)
+  }
+  
+  .autor {
+      color: rgb(42, 165, 128);
+  }
+  
+  .title {
+      font-style: italic;
+      text-decoration: underline;
+  }
+  
+  footer {
+      min-height: 10vh;
+      background-color:rgb(42, 165, 128);
+      color: bisque;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
