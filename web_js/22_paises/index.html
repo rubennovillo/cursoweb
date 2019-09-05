@@ -1,26 +1,32 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>REST Countries API</title>
+    <title>Geografía</title>
     <link rel="stylesheet" href="./css/style.css">
-    <script src="main.js"></script>
+    
   </head>
   <body>
-    <h1>REST Countries API</h1>
+
+    <h1>Datos geográficos</h1>
     <div id="main-container">
-      <div id="flag-container">
-        <img src="" alt="">
-      </div>
+     
       <div id="info-container">
-        <select id="countries"></select>
+        <select id="continente"></select>
+            <!-- <option id="africa"value="Africa">África</option>
+            <option id="asia" value="Asia">Asia</option>
+            <option id="america" value="Americas">América</option>
+            <option id="europa" value="Europe">Europa</option>
+            <option id="oceania" value="Oceania">Oceanía</option> -->
+            
+            
+        <select id="pais"></select> 
+        <div id="flag-container">
+         <img src="" alt="">
+        </div>
         <p>Capital: <span id="capital"></span></p>
-        <p>Dialing Code: <span id="dialing-code"></span></p>
-        <p>Population: <span id="population"></span></p>
-        <p>Currencies: <span id="currencies"></span></p>
-        <p>Region: <span id="region"></span></p>
-        <p>Subregion: <span id="subregion"></span></p>
+        <p>Continente: <span id="region"></span></p>
+        <p>Región: <span id="subregion"></span></p>
       </div>
     </div>
-    
+  <script src="./js/app.js"></script>
   </body>
-</html>
