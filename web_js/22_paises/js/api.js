@@ -1,3 +1,1 @@
-const world = 'https://restcountries.eu/rest/region/' 
-const region = ''
-export const LBase = world + region
+export const world = 'https://restcountries.eu/rest/v2/all' 

@@ -2,7 +2,7 @@
       box-sizing: border-box;
     }
     body {
-      font-family: Helvetica, Arial, sans-serif;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       font-size: 20px;
       color: rgb(46, 56, 70);
       background-image: url(../assest/mapamunid_mudo_02-1024x564.jpg)
@@ -13,7 +13,7 @@
       text-decoration: overline underline rgb(7, 64, 87);
     }
     #main-container {
-      width: 502px;
+      width: 500px;
       margin: 30px auto;
       padding: 0;
       background-color: rgba(255, 255, 255, 0.726)
@@ -35,7 +35,7 @@
       padding: 5px;
       min-width: 100%;
       background-color: rgb(7, 64, 87);
-      color: rgb(253, 238, 171);
+      color: rgb(236, 208, 157);
       font-size: 15px;
       font-weight: 900;
       text-align-last: center;
