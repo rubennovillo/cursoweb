@@ -26,14 +26,14 @@ fetch(world)
 function init(paisData) {
   countries = paisData
   let opciones = ""
- //pais.alpha3Code
-  countries.forEach(pais => opciones+=`<option value="${pais.name}"></option>`)
+ 
+  countries.forEach(pais => opciones+=`<option value="${pais.name}">${pais.name}</option>`)
 
   countriesList.innerHTML = opciones
 }
 
 function CountryInfo(Info) {
-  let countryData = countries.find(country => country.alpha3Code == Info)
+  let countryData = countries.find(country => country.name == Info)
   document.querySelector("#flag-container img").src = countryData.flag;
   document.querySelector("#capital").innerHTML = countryData.capital
   document.querySelector("#region").innerHTML = countryData.region
