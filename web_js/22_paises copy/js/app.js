@@ -7,12 +7,12 @@ let countriesList = document.querySelector("#pais")
 
 // Asociación de manejadores de eventos
 
-// regionsList.addEventListener("change", newRegionSelection)
+regionsList.addEventListener("change", newRegionSelection)
 countriesList.addEventListener("change", newCountrySelection)
 
  // Funciones manejadoras de eventos
 
- /* function newRegionSelection(ev) {
+ function newRegionSelection(ev) {
   Regionselect(ev.target.value)
 }
 
@@ -26,7 +26,8 @@ function chose (choseData) {
  regions.forEach(pais => options +=`<option value ="${pais.region}">${pais.region}</option>`)
 
  regionsList.innerHTML = options
-}*/
+}
+
 function newCountrySelection(ev) {
   CountryInfo(ev.target.value)
 }
