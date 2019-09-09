@@ -16,7 +16,7 @@ countriesList.addEventListener("change", newCountrySelection)
   Regionselect(ev.target.value)
 }
 
-fetch(world)
+fetch(region + ev.target.value)
 .then(response => response.json())
 .then(data => chose(data))
 
