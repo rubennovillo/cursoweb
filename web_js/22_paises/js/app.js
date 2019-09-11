@@ -3,30 +3,29 @@ const region = 'https://restcountries.eu/rest/v2/region/'
 // Nodos del DOM
 let regionsList = document.querySelector("#continente")
 let countriesList = document.querySelector("#pais")
-
+let countries
 
 // Asociación de manejadores de eventos
 
-// regionsList.addEventListener("change", newRegionSelection)
+regionsList.addEventListener("change", newRegionSelection)
 countriesList.addEventListener("change", newCountrySelection)
 
  // Funciones manejadoras de eventos
 
- /* function newRegionSelection(ev) {
-  Regionselect(ev.target.value)
-}
-
-fetch(region + ev.target.value)
+function newRegionSelection(ev) {
+  fetch(region + ev.target.value)
 .then(response => response.json())
 .then(data => chose(data))
+}
+
 
 function chose (choseData) {
   regions = choseData
   let options = ""
- regions.forEach(pais => options +=`<option value ="${pais.region}">${pais.region}</option>`)
+ regions.forEach(pais => options +=`<option value ="${pais.name}">${pais.name}</option>`)
 
- regionsList.innerHTML = options
-}*/
+ countriesList.innerHTML = options
+}
 function newCountrySelection(ev) {
   CountryInfo(ev.target.value)
 }
