@@ -1,0 +1,64 @@
+//- esto es un comentario solo para pug
+
+-let page = 2
+-let titulo = 'Hola Pug'
+-const charset = 'utf-8'
+-const empresa = 'colegio <b>Tajamar</b>'
+-let aPaises =['España', 'Francia', 'Italia', 'Alemania', 'Narnia']
+-const aMenu = [{nombre: 'Inicio', id: 'inicio'}, {nombre:'Porfolio', id: 'porfolio'}, {nombre:'Clientes', id: 'cliente'}, {nombre:'Nosotros', id: 'nosotros'}]
+-const aMenuP = [{nombre:'Web Page', id: 'web'}, {nombre:'Movile APPS', id: 'movileapps'}, {nombre:'IX/UI', id: 'ixui'}]
+
+//-Mixin
+mixin itemMenu(item)
+    li
+        a(href="#"+item.id.toLowerCase()title=item.description) #{item}
+
+doctype
+html(lang=languaje)
+    head
+        meta(charset=charset)
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        link(rel="stylesheet", href="./css/style.css")
+        title #{titulo}
+    body
+        header.main-header
+            -if (page == 1) {
+                h1= titulo
+            -} else {
+                h1 #{titulo} - continuación
+            -}
+            nav.main-menu 
+                ul
+                    each item in aMenu
+                            +itemMenu(item)
+        main.flex    
+            section
+                figure
+                    img(src="https://www.eluniversal.com.mx/sites/default/files/styles/f03-651x400/public/_103927763_44190191_2160165127350452_3001085544559017984_n.jpg?itok=w4GAMhqp", alt="imagen") 
+            section
+                form(action="")
+                    select(name="pais")
+                        //- -for (let i=0; i<aPaises.length; i++) {
+                        //- -let item = aPaises[i]
+                        //- option(value=item) #{item}
+                        //- -}
+
+                        each item in aPaises
+                            option(value=item) #{item}
+
+             nav.main-menu 
+                ul
+                    each item in aMenuP
+                            +itemMenu(item)       
+                
+            section.parrafo
+                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem omnis nostrum id, facere eveniet quaerat quae ad eum odio aliquam, itaque, nulla harum molestias commodi non quos fugiat fuga mollitia?
+                p Fugit aliquid accusantium, repellat quis cupiditate, deleniti laboriosam ullam culpa ad at reprehenderit modi natus fuga iusto quae eveniet odit facilis harum nihil. Error commodi dignissimos magnam sit nobis sed.
+                p Hic illo iste quo. Repudiandae, rem deleniti? Perferendis quos beatae ab magni sit quia labore ipsam obcaecati cumque sint incidunt aliquam, reprehenderit molestiae ad fugit, asperiores, numquam fuga error. Nemo.
+                p Molestiae consequuntur fugiat architecto exercitationem itaque doloremque veniam, nulla id quibusdam similique odio veritatis quo sed nihil, neque accusamus excepturi voluptate? Numquam obcaecati ea mollitia et a quae corrupti repellendus.
+                p Asperiores quo voluptate nemo, recusandae quam ullam error! Repudiandae totam expedita dolorum veniam unde consequatur iste, illo maxime dolorem asperiores maiores. Sapiente accusamus omnis cum natus autem minima accusantium dolore?
+        footer.main-footer
+            address #{autor}
+            div
+                small!=empresa

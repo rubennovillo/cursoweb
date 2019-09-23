@@ -1,0 +1,64 @@
+body {
+  margin: 0rem;
+  grid-template-columns: 2fr auto auto 1fr;
+}
+
+.main, .main-footer, .main-header {
+  background-color: #225c01;
+  color: bisque;
+  display: flex;
+}
+
+.main-header {
+  justify-content: center;
+  text-align: center;
+}
+.main-header h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+nav a {
+  text-decoration: none;
+  display: block;
+  padding: 1rem;
+}
+
+nav .main-menu a {
+  color: yellow;
+}
+
+p {
+  color: white;
+}
+
+.parrafo {
+  padding: 2rem;
+}
+
+main {
+  min-height: 60vh;
+}
+
+section.intro {
+  margin: 2.6rem;
+}
+section.intro header {
+  background-color: bisque;
+  color: brown;
+}
+p {
+  border: 1px solid crimson;
+  padding: 1rem;
+}
+
+.main-footer {
+  justify-content: center;
+  text-align: center;
+}

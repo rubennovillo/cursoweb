@@ -1,0 +1,21 @@
+*{box-sizing: border-box}
+
+body{
+      font-size: 1rem;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      
+}
+
+.mainheader, footer {
+      color: white;
+      background-color: orange;
+      padding : 2rem;
+      text-align: center;
+}
+main{
+  min-height: 90vh;    
+}
+
+
+
+
